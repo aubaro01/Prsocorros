@@ -1,0 +1,103 @@
+/* Reset e configurações iniciais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Barra de navegação */
+nav {
+  background: #343a40;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* Container principal */
+.page {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos e parágrafos */
+.page h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.page p {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilização para imagens e vídeos */
+.image-container {
+  max-width: 600px; /* Limita a largura das imagens */
+  margin: 0 auto 1.5rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+img, video {
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+/* Botões estilo link */
+a.link-button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+a.link-button:hover {
+  background: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
