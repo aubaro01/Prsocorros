@@ -17,7 +17,7 @@ function App() {
         <nav>
           <ul>
             <li><Link to="/page4">Página 4</Link></li>
-            <li><Link to="/pageMain">Página Principal</Link></li>
+            <li><Link to="/">Página Principal</Link></li>
           </ul>       
         </nav>     
         <Routes>
