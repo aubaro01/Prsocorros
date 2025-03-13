@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button, Form } from "react-bootstrap";
 
+
+// Para exemplo de como vai ficar
+
 export default function PageEx4() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -13,7 +16,6 @@ export default function PageEx4() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados via fetch, por exemplo.
     console.log("Dados enviados:", formData);
     setSubmitted(true);
   };
