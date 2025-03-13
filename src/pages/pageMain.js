@@ -1,17 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import Image from "public/imag.jpg";
 
-//Codigo para adicionar a imagem, rever e aplicar. Não mostra a imagem
-/*       <section className="bg-light py-5">
-  <div className="container text-center">
-      <img src={Image} alt="Imagem do local"/>
-    <p className="text-muted mt-3">
-      deserunt mollit anim id est laborum.
-    </p>
-  </div>
-</section> */
 
+const imageUrl = "/imag.jpg";
 
 export default function LandingPage() {
   const handleSubmit = async (event) => {
@@ -60,6 +51,15 @@ export default function LandingPage() {
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </section>
+        <section className="bg-light py-5">
+          <div className="container text-center">
+            <img
+            src={imageUrl}
+            alt="Imagem do local"
+            className="img-fluid w-75 mx-auto d-block"/>
+    <p className="text-muted mt-3">deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
       
         <section className="container py-5">
           <div className="text-center mb-4">
@@ -75,8 +75,8 @@ export default function LandingPage() {
 
             <div className="mb-3">
               <label htmlFor="circuito" className="form-label">Número do Circuito</label>
-              <input type="text" id="circuito" className="form-control" placeholder="Digite o número do circuito" min="1" max="3" required />
-              <div className="form-text">Número e letra.</div>
+              <input type="text" id="circuito" className="form-control" placeholder="Digite o número do circuito*" min="1" max="3" required />
+              <div className="form-text"><em>*</em> Número e letra.</div>
             </div>
             <button type="submit" className="btn btn-dark w-100">Enviar Dados</button>
           </form>
