@@ -12,6 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
   </div>
 </section> */
 
+
 export default function LandingPage() {
   const handleSubmit = async (event) => {
     event.preventDefault();
