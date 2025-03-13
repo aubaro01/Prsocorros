@@ -52,7 +52,7 @@ export default function LandingPage() {
         <section className="bg-light py-5">
           <div className="container text-center">
             <img
-              src="/public/logo512.png"
+              src="../public/imag.jpg"
               alt="deserunt mollit anim id est laborum"
               className="img-fluid rounded shadow"
             />
