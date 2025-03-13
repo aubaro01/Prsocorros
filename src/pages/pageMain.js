@@ -44,6 +44,7 @@ export default function LandingPage() {
       <main className="flex-grow-1">
         <section className="container text-center py-5">
           <h2 className="fw-bold">Bem-vindo(a) a <strong> Formação para Primeiros Socorros</strong></h2>
+          <h3 class="fw-bold alert alert-secondary"><strong>Instruções!</strong></h3>
           <p className="text-muted">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
