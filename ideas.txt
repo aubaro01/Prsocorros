@@ -48,3 +48,13 @@
             Este vídeo demonstra o procedimento completo para resolução de problemas no circuito {formData.circuito}.
           </p>
         </div>
+
+
+// 
+
+Para upload da base de dados em mongodb 
+
+https://railway.com
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/deployment
+
