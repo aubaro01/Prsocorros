@@ -2,6 +2,16 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import Image from "../../public/imag.jpg";
 
+//Codigo para adicionar a imagem, rever e aplicar. Não mostra a imagem
+/*       <section className="bg-light py-5">
+  <div className="container text-center">
+      <img src={Image} alt="Imagem do local"/>
+    <p className="text-muted mt-3">
+      deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</section> */
+
 export default function LandingPage() {
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -49,7 +59,7 @@ export default function LandingPage() {
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </section>
-
+      
         <section className="container py-5">
           <div className="text-center mb-4">
             <h2 className="fw-bold">Inscreva-se Agora</h2>
