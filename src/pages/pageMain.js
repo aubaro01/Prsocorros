@@ -1,20 +1,93 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function pageMain() {
+export default function LandingPage() {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      nome: event.target.nome.value,
+      circuito: event.target.circuito.value,
+    };
+
+    try {
+      const response = await fetch('http://localhost/api/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Inscrição enviada com sucesso!');
+      } else {
+        alert('Erro ao enviar inscrição.');
+      }
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Erro ao enviar inscrição.');
+    }
+  };
+
   return (
-    <div>
-      <h1>Página 1</h1>
-      <img src="https://via.placeholder.com/400" alt="Imagem aleatória" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem.</p>
-      <video width="400" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-        Seu navegador não suporta o elemento de vídeo.
-      </video>
-      <br />
-      <Link to="/page2">Ir para Página 2</Link>
+    <div className="d-flex flex-column min-vh-100">
+      <header className="bg-dark text-white py-4 text-center">
+        <div className="container">
+          <h1 className="fw-bold">SAV</h1>
+          <p className="fs-5">Formação para os primeiros socorros</p>
+        </div>
+      </header>
+
+      <main className="flex-grow-1">
+        <section className="container text-center py-5">
+          <h2 className="fw-bold">Bem-vindo(a) a <strong> Formação para Primeiros Socorros</strong></h2>
+          <p className="text-muted">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p className="text-muted">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+
+        <section className="bg-light py-5">
+          <div className="container text-center">
+            <img
+              src="/public/logo512.png"
+              alt="deserunt mollit anim id est laborum"
+              className="img-fluid rounded shadow"
+            />
+            <p className="text-muted mt-3">
+            deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+
+        <section className="container py-5">
+          <div className="text-center mb-4">
+            <h2 className="fw-bold">Inscreva-se Agora</h2>
+            <p className="text-muted">Preencha o formulário abaixo para criar o seu perfil para os exercícios</p>
+          </div>
+
+          <form className="mx-auto" style={{ maxWidth: "400px" }} onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label htmlFor="nome" className="form-label">Nome</label>
+              <input type="text" id="nome" className="form-control" placeholder="Digite seu nome primeiro e ultimo nome" required />
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="circuito" className="form-label">Número do Circuito</label>
+              <input type="number" id="circuito" className="form-control" placeholder="Digite o número do circuito" min="1" required />
+              <div className="form-text">Apenas números são aceitos</div>
+            </div>
+
+            <button type="submit" className="btn btn-dark w-100">Enviar Inscrição</button>
+          </form>
+        </section>
+      </main>
+
+      <footer className="bg-dark text-white text-center py-3">
+        <p>© {new Date().getFullYear()} SAV. <br></br>Todos os direitos reservados.</p>
+      </footer>
     </div>
   );
 }
-
-export default pageMain;
