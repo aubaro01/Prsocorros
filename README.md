@@ -2,4 +2,4 @@
 
 <p><strong>Diagrama ER para a base de dados</strong></p>
 
-![image](https://github.com/user-attachments/assets/4f7c7448-ebd7-48d4-b35b-f2f940afe3e8)
+![image](https://github.com/user-attachments/assets/312ce287-2250-4661-a9dd-df54d64587f2)
