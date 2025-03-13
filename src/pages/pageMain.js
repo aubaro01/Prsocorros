@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "../../public/imag.jpg";
 
 export default function LandingPage() {
   const handleSubmit = async (event) => {
@@ -51,11 +52,7 @@ export default function LandingPage() {
 
 <section className="bg-light py-5">
   <div className="container text-center">
-    <img
-      src="../../public/imag.jpg"
-      alt="deserunt mollit anim id est laborum"
-      className="img-fluid rounded shadow"
-    />
+      <img src={Image} alt="Imagem do local"/>
     <p className="text-muted mt-3">
       deserunt mollit anim id est laborum.
     </p>
