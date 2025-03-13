@@ -8,11 +8,7 @@ import Page4 from './pages/PageEx4';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function title() {
-  useEffect(() => {
-    document.title = 'SAV - Primeiros Socorros';
-  }, []);
-}
+
 
 function App() {
   return (
