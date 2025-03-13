@@ -1,9 +1,21 @@
 const express = require('express');
 const router = express.Router();
+const User = require('./models/User');
 
-const userController = require('../controllers/userController');
+const UserController = {
+  create: (userData, callback) => {
+    const newUser = new User({
+      nome: userData.nome,
+      circuito: userData.circuito,
+    });
 
-router.get('/', userController.index);
-router.post('/create', userController.create);  
+    newUser.save((err, savedUser) => {
+      if (err) {
+        return callback(err);
+      }
+      callback(null, savedUser);
+    });
+  }
+};
 
-module.exports = router;
+module.exports = UserController;

@@ -76,7 +76,7 @@ export default function LandingPage() {
 
             <div className="mb-3">
               <label htmlFor="circuito" className="form-label">Número do Circuito</label>
-              <input type="number" id="circuito" className="form-control" placeholder="Digite o número do circuito" min="1" required />
+              <input type="text" id="circuito" className="form-control" placeholder="Digite o número do circuito" min="1" required />
               <div className="form-text">Apenas números são aceitos</div>
             </div>
 

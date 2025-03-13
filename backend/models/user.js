@@ -1,15 +1,11 @@
-const connection = require('../Config/db');
+const mongoose = require('mongoose');
 
-const User = {
-  create: (userData, callback) => {
-    const query = 'INSERT INTO users (nome, circuito) VALUES (?, ?)';
-    connection.query(query, [userData.nome, userData.circuito], (err, results) => {
-      if (err) {
-        return callback(err);
-      }
-      callback(null, results);
-    });
-  }
-};
+const userSchema = new mongoose.Schema({
+  nome: { type: String, required: true },
+  circuito: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now },
+});
+
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;
