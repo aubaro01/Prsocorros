@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import Image from "../../public/imag.jpg";
+//import Image from "public/imag.jpg";
 
 //Codigo para adicionar a imagem, rever e aplicar. Não mostra a imagem
 /*       <section className="bg-light py-5">
