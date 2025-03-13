@@ -49,18 +49,18 @@ export default function LandingPage() {
           </p>
         </section>
 
-        <section className="bg-light py-5">
-          <div className="container text-center">
-            <img
-              src="../public/imag.jpg"
-              alt="deserunt mollit anim id est laborum"
-              className="img-fluid rounded shadow"
-            />
-            <p className="text-muted mt-3">
-            deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </section>
+<section className="bg-light py-5">
+  <div className="container text-center">
+    <img
+      src="../../public/imag.jpg"
+      alt="deserunt mollit anim id est laborum"
+      className="img-fluid rounded shadow"
+    />
+    <p className="text-muted mt-3">
+      deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</section>
 
         <section className="container py-5">
           <div className="text-center mb-4">
