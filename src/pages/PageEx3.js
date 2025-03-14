@@ -13,7 +13,6 @@ export default function PageEx4() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados via fetch, por exemplo.
     console.log("Dados enviados:", formData);
     setSubmitted(true);
   };
@@ -32,83 +31,344 @@ export default function PageEx4() {
     setFormData({ nome: "", circuito: "", concluido: false });
   };
 
+  // Array com as etapas do exercício
+  const steps = [
+    {
+      id: 1,
+      title: "Vídeo Demonstrativo",
+      content: (
+        <>
+          <div className="ratio ratio-16x9 mb-4">
+            <iframe
+              src="https://www.youtube.com/embed/CMKw77fbkOs"
+              title="Vídeo demonstrativo do exercício"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Este vídeo demonstra a técnica correta para realizar o agachamento com salto.
+            Observe atentamente os movimentos antes de começar a praticar.
+          </p>
+        </>
+      ),
+    },
+    {
+      id: 2,
+      title: "Posição Inicial",
+      content: (
+        <>
+          <div className="text-center mb-4">
+            <img
+              src="/imag.jpg"
+              alt="Posição Inicial"
+              className="img-fluid rounded"
+              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
+            />
+          </div>
+          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Fique em pé com os pés afastados na largura dos ombros e braços relaxados ao lado do corpo.
+            Esta posição é a base para um bom agachamento e proporciona estabilidade durante o exercício.
+          </p>
+        </>
+      ),
+    },
+    {
+      id: 3,
+      title: "Agachamento",
+      content: (
+        <div className="row">
+          <div className="col-md-6">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Dobre os joelhos e quadris, abaixando o corpo como se fosse sentar em uma cadeira invisível.
+            </p>
+            <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              <li className="mb-2">Mantenha o peito erguido</li>
+              <li className="mb-2">Coluna em posição neutra</li>
+              <li className="mb-2">Joelhos alinhados com os pés</li>
+              <li>Não ultrapasse a linha dos dedos com os joelhos</li>
+            </ul>
+          </div>
+          <div className="col-md-6 text-center">
+            <img
+              src="/imag.jpg"
+              alt="Agachamento"
+              className="img-fluid rounded"
+              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 4,
+      title: "Salto",
+      content: (
+        <div className="row">
+          <div className="col-md-6 text-center mb-4 mb-md-0">
+            <img
+              src="/imag.jpg"
+              alt="Salto"
+              className="img-fluid rounded"
+              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
+            />
+          </div>
+          <div className="col-md-6">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              A partir da posição de agachamento, <strong>impulsione o corpo para cima</strong> em um salto explosivo,
+              estendendo completamente os joelhos e quadris.
+            </p>
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Use os braços para ajudar no impulso, movendo-os para frente e para cima.
+            </p>
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Aterrisse suavemente, voltando para a posição de agachamento, amortecendo o impacto.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+  ];
+
   return (
-    <div className="d-flex flex-column min-vh-100 bg-light text-dark">
-      <header className="bg-dark text-white py-4 text-center">
+    <div className="exercise-page">
+      {/* Header com design escuro simplificado */}
+      <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
-          <h1 className="fw-bold">SAV</h1>
-          <p className="fs-5">Exercício nº 4</p>
-          <h2 className="fw-bold">Remoção de Vitima no auditório</h2>
-          <p className="fs-5">- Comunicações Emergencia</p>
+          <div className="d-flex justify-content-between align-items-center">
+            <h1 className="m-0" style={{ fontSize: "1.8rem", fontWeight: "700" }}>SAV</h1>
+            <div className="py-1 px-3" style={{ border: "1px solid rgba(31, 26, 26, 0.3)", borderRadius: "4px" }}>
+              Exercício 4
+            </div>
+          </div>
+          <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
+            Remoção de Vítima no Auditório<br></br>
+            - Consciente + Insconsciente
+          </p>
         </div>
       </header>
 
-      <main className="flex-grow-1">
-        <section className="container text-center py-5">
-          <h2 className="fw-bold">Agachamento com Salto</h2>
-          <p className="text-muted">
-            Exercício de alta intensidade para fortalecer as pernas e melhorar a explosão muscular.
+      <main className="container py-5">
+        {/* Título do exercício com design escuro simplificado */}
+        <div className="text-center mb-5">
+          <h2
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "700",
+              color: "black",
+              marginBottom: "1rem",
+            }}
+          >
+            Agachamento com Salto
+          </h2>
+          <div
+            className="mx-auto"
+            style={{ width: "50px", height: "3px", backgroundColor: "#f39c12", marginBottom: "1.5rem" }}
+          ></div>
+          <p style={{ fontSize: "1.2rem", color: "black" }}>
+            Aprenda a técnica correta do agachamento com salto para aprimorar sua força e potência
           </p>
-          <div className="ratio ratio-16x9">
-  <iframe
-    src="https://www.youtube.com/embed/CMKw77fbkOs"
-    title="Vídeo demonstrativo do exercício"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe>
-</div>
+        </div>
 
-        </section>
+        {/* Todas as etapas são mostradas em sequência com o mesmo estilo escuro */}
+        <div className="row">
+          <div className="col-lg-10 mx-auto">
+            {steps.map((step) => (
+              <section
+                key={step.id}
+                className="mb-5 p-4 rounded"
+                style={{ backgroundColor: "#343a40" }}
+              >
+                <div className="d-flex align-items-center mb-4">
+                  <div
+                    style={{
+                      minWidth: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#f39c12",
+                      color: "#343a40",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                      fontSize: "1.2rem",
+                      marginRight: "15px",
+                    }}
+                  >
+                    {step.id}
+                  </div>
+                  <h3
+                    style={{
+                      fontSize: "1.5rem",
+                      fontWeight: "600",
+                      margin: 0,
+                      color: "#ecf0f1",
+                      borderLeft: "3px solid #f39c12",
+                      paddingLeft: "15px",
+                    }}
+                  >
+                    {step.title}
+                  </h3>
+                </div>
+                {step.content}
+              </section>
+            ))}
 
-        <section className="container py-5">
-          <h3 className="fw-bold text-center mb-4">Passos do Exercício</h3>
-          <div className="row text-center">
-            <div className="col-md-4 mb-3">
-              <img
-                src="/placeholder.svg"
-                alt="Passo 1: Posição Inicial"
-                className="img-fluid rounded shadow"
-              />
-              <p className="mt-2">Passo 1: Posição Inicial</p>
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="/placeholder.svg"
-                alt="Passo 2: Agachamento"
-                className="img-fluid rounded shadow"
-              />
-              <p className="mt-2">Passo 2: Agachamento</p>
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="/placeholder.svg"
-                alt="Passo 3: Salto"
-                className="img-fluid rounded shadow"
-              />
-              <p className="mt-2">Passo 3: Salto</p>
-            </div>
+            {/* Seção combinada de Resumo e Conclusão */}
+            <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
+              <h4
+                style={{
+                  fontSize: "1.2rem",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  marginBottom: "1.5rem",
+                  color: "#ecf0f1",
+                }}
+              >
+                Resumo e Conclusão do Exercício
+              </h4>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      1
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Assistir ao vídeo demonstrativo
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      2
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Posicionar-se corretamente
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      3
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Realizar o agachamento
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      4
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Executar o salto explosivo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p
+                style={{
+                  fontSize: "1.1rem",
+                  lineHeight: "1.7",
+                  color: "#e9ecef",
+                  marginBottom: "1.5rem",
+                  textAlign: "center",
+                }}
+              >
+                Parabéns! Você completou todas as etapas do exercício de Agachamento com Salto.
+                Este exercício é excelente para fortalecer as pernas e melhorar a explosão muscular.
+              </p>
+              <div className="text-center">
+                <Button
+                  onClick={() => setShowModal(true)}
+                  style={{
+                    backgroundColor: "#f39c12",
+                    border: "none",
+                    borderRadius: "4px",
+                    padding: "0.75rem 2.5rem",
+                    fontSize: "1.1rem",
+                    fontWeight: "600",
+                  }}
+                >
+                  Registrar Conclusão
+                </Button>
+              </div>
+            </section>
           </div>
-        </section>
-
-        <section className="container text-center py-5">
-          <Button variant="primary" onClick={() => setShowModal(true)}>
-          Conclusão
-          </Button>
-        </section>
+        </div>
       </main>
 
-      <footer className="bg-dark text-white text-center py-3">
-        <p>
-          © {new Date().getFullYear()} SAV. <br />
-          Todos os direitos reservados.
-        </p>
+      {/* Footer simples estilo Medium */}
+      <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
+        <div className="container text-center">
+          <p style={{ fontSize: "0.9rem", color: "#757575" }}>
+            © {new Date().getFullYear()} SAV. Todos os direitos reservados.
+          </p>
+        </div>
       </footer>
 
+      {/* Modal de Registro */}
       <Modal show={showModal} onHide={handleModalClose} centered>
-        <Modal.Header closeButton className="bg-light text-dark">
-          <Modal.Title>Registrar Exercício</Modal.Title>
+        <Modal.Header closeButton style={{ border: "none" }}>
+          <Modal.Title style={{ fontSize: "1.5rem", fontWeight: "600" }}>
+            Registrar Exercício
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="bg-light text-dark">
+        <Modal.Body>
           {!submitted ? (
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formNome">
@@ -120,6 +380,7 @@ export default function PageEx4() {
                   onChange={handleChange}
                   placeholder="Digite seu nome completo"
                   required
+                  style={{ fontSize: "1rem", padding: "0.75rem" }}
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formCircuito">
@@ -132,10 +393,10 @@ export default function PageEx4() {
                   placeholder="Digite o número do circuito"
                   min="1"
                   required
+                  style={{ fontSize: "1rem", padding: "0.75rem" }}
                 />
-                <Form.Text className="text-muted">Apenas números são aceitos</Form.Text>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formConcluido">
+              <Form.Group className="mb-4" controlId="formConcluido">
                 <Form.Check
                   type="checkbox"
                   name="concluido"
@@ -144,15 +405,37 @@ export default function PageEx4() {
                   label="Exercício concluído"
                 />
               </Form.Group>
-              <Button variant="primary" type="submit" className="w-100">
-                Enviar Registro
+              <Button
+                type="submit"
+                style={{
+                  backgroundColor: "#03a87c",
+                  border: "none",
+                  width: "100%",
+                  padding: "0.75rem",
+                  fontSize: "1rem",
+                }}
+              >
+                Enviar
               </Button>
             </Form>
           ) : (
-            <div className="text-center">
-              <h4>Registro Concluído!</h4>
-              <p>Seu exercício foi registrado com sucesso.</p>
-              <Button variant="primary" onClick={handleModalClose}>
+            <div className="text-center py-3">
+              <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✓</div>
+              <h4 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "1rem" }}>
+                Registro Concluído!
+              </h4>
+              <p className="mb-4" style={{ fontSize: "1.1rem", color: "#292929" }}>
+                Seu exercício foi registrado com sucesso.
+              </p>
+              <Button
+                onClick={handleModalClose}
+                style={{
+                  backgroundColor: "#03a87c",
+                  border: "none",
+                  padding: "0.75rem 2rem",
+                  fontSize: "1rem",
+                }}
+              >
                 Fechar
               </Button>
             </div>
