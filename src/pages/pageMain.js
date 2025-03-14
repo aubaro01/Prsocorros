@@ -46,22 +46,22 @@ export default function LandingPage() {
           <h2 className="fw-bold">Bem-vindo(a) a <strong> Formação para Primeiros Socorros</strong></h2>
           <h3 class="fw-bold alert alert-secondary"><strong>Instruções!</strong></h3>
           <p className="text-muted">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p className="text-muted">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </section>
         <section className="bg-light py-5">
           <div className="container text-center">
             <img
-            src={imageUrl}
-            alt="Imagem do local"
-            className="img-fluid w-75 mx-auto d-block"/>
-    <p className="text-muted mt-3">deserunt mollit anim id est laborum.</p>
-  </div>
-</section>
-      
+              src={imageUrl}
+              alt="Imagem do local"
+              className="img-fluid w-75 mx-auto d-block" />
+            <p className="text-muted mt-3">deserunt mollit anim id est laborum.</p>
+          </div>
+        </section>
+
         <section className="container py-5">
           <div className="text-center mb-4">
             <h2 className="fw-bold">Inscreva-se Agora</h2>
@@ -76,8 +76,13 @@ export default function LandingPage() {
 
             <div className="mb-3">
               <label htmlFor="circuito" className="form-label">Número do Circuito</label>
-              <input type="text" id="circuito" className="form-control" placeholder="Digite o número do circuito*" min="1" max="3" required />
-              <div className="form-text"><em>*</em> Número e letra.</div>
+              <input type="text" id="circuito" className="form-control" placeholder="Digite o número do circuito *" min="1" max="3" required />
+              <div className="form-text"><em>*</em> Números e letra.</div>
+            </div>
+
+            <div className="mb-3">
+              <label htmlFor="password" className="form-label">Password</label>
+              <input type="Password" id="password" className="form-control" placeholder="Digite uma password" min="1" max="10" required />
             </div>
             <button type="submit" className="btn btn-dark w-100">Enviar Dados</button>
           </form>
