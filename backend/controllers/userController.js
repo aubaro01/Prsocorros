@@ -1,21 +1,28 @@
-const express = require('express');
-const router = express.Router();
-const User = require('./models/User');
+const User = require('../models/user'); 
 
-const UserController = {
-  create: (userData, callback) => {
-    const newUser = new User({
-      nome: userData.nome,
-      circuito: userData.circuito,
-    });
+const createUser = async (req, res) => {
+  try {
+    const { home, circuito, Pass } = req.body;
 
-    newUser.save((err, savedUser) => {
-      if (err) {
-        return callback(err);
-      }
-      callback(null, savedUser);
-    });
+    const newUser = new User({ home, circuito, Pass });
+    const savedUser = await newUser.save();
+
+    res.status(201).json(savedUser);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
   }
 };
 
-module.exports = UserController;
+const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find(); 
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+module.exports = {
+  createUser,
+  getAllUsers,
+};

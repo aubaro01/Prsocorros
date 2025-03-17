@@ -1,22 +1,13 @@
-const express = require("express");
+const express = require('express');
+const userRoutes = require('./routes/UserRote');
+
 const app = express();
 
-const port = process.env.PORT || 3000;
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  const htmlResponse = `
-    <html>
-      <head>
-        <title>NodeJs and Express on Vercel</title>
-      </head>
-      <body>
-        <h1>I am a backend project on Vercel</h1>
-      </body>
-    </html>
-  `;
-  res.send(htmlResponse);
-});
+app.use('/api', userRoutes);
 
-app.listen(port, () => {
-  console.log(`port running at http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
