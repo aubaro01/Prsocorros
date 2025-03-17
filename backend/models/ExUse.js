@@ -24,3 +24,4 @@ const UserExerc = mongoose.model('UserExerc', userExercSchema);
 
 
 module.exports = UserExerc;
+
