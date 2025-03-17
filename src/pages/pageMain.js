@@ -76,7 +76,7 @@ export default function LandingPage() {
         {/* Form Section */}
         <section className="container py-5">
           <div className="text-center mb-4">
-            <h2 className="fw-bold">Inscreva-se Agora</h2>
+            <h2 className="fw-bold">Inscreva-se</h2>
             <p className="text-muted">
               Preencha o formulário abaixo para criar o seu perfil para os exercícios ao longo do dia...
             </p>
@@ -90,19 +90,21 @@ export default function LandingPage() {
                 type="text"
                 id="nome"
                 className="form-control"
-                placeholder="Digite o seu Primeiro e último nome"
+                placeholder="Digite o seu Primeiro e Último nome"
+                min="5"
+                max="30"
                 required
               />
             </div>
 
             {/* Circuito Field */}
             <div className="mb-3">
-              <label htmlFor="circuito" className="form-label">Número do Circuito</label>
+              <label htmlFor="circuito" className="form-label">Circuito</label>
               <input
                 type="text"
                 id="circuito"
                 className="form-control"
-                placeholder="Digite o número do circuito *"
+                placeholder="Digite o seu Circuito *"
                 min="1"
                 max="3"
                 required
@@ -126,7 +128,7 @@ export default function LandingPage() {
 
             {/* Submit Button */}
             <button type="submit" className="btn btn-dark w-100">
-              Enviar Dados
+              Submeter Dados
             </button>
           </form>
         </section>
