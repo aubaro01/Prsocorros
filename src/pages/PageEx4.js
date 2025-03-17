@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button, Form } from "react-bootstrap";
 
-// Componente para o Header
 const Header = () => (
   <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
     <div className="container">
@@ -20,18 +19,17 @@ const Header = () => (
   </header>
 );
 
-// Componente para o Footer
 const Footer = () => (
   <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
     <div className="container text-center">
       <p style={{ fontSize: "0.9rem", color: "#757575" }}>
-        © {new Date().getFullYear()} SAV. Todos os direitos reservados.
+        © {new Date().getFullYear()} S.A.V. Todos os direitos reservados.
       </p>
     </div>
   </footer>
 );
 
-// Componente para o Título do Exercício
+
 const ExerciseTitle = () => (
   <div className="text-center mb-5">
     <h2 style={{ fontSize: "2.5rem", fontWeight: "700", color: "black", marginBottom: "1rem" }}>
@@ -160,7 +158,7 @@ export default function PageEx4() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!formData.nome || !formData.password) {
-      alert("Por favor, preencha todos os campos obrigatórios.");
+      alert("Por favor, preencha todos os campos.");
       return;
     }
     const dadosParaEnviar = { ...formData, concluido: formData.concluido ? "sim" : "não" };
