@@ -1,3 +1,4 @@
+
 const express = require('express');
 const userRoutes = require('./routes/UserRote');
 const exerRoutes = require('./routes/ExerRote');
@@ -15,3 +16,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
