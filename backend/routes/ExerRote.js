@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const { createExercicio, getAllExercicios } = require('../controllers/ExerController');
 
-const exerController = require('../controllers/ExerController');
+router.post('/exer', createExercicio);
 
-router.get('/', exerController.index);
-router.put('/update/:id', exerController.update);
+router.get('/exer', getAllExercicios);
 
 module.exports = router;

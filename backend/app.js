@@ -1,6 +1,19 @@
-const express = require("express"); 
-const app = express(); 
 
-app.get("/", (req, res) => { res.send("Express on Vercel"); });
- const PORT = process.env.PORT || 5000; 
- app.listen(PORT, () => { console.log(`Server is running on port ${PORT}`); });
+const express = require('express');
+const userRoutes = require('./routes/UserRote');
+const exerRoutes = require('./routes/ExerRote');
+const userExercRoutes = require('./routes/UserExerRote');
+
+const app = express();
+
+app.use(express.json());
+
+app.use('/api', userRoutes);
+app.use('/api', exerRoutes);
+app.use('/api', userExercRoutes);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
