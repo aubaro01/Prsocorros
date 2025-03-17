@@ -1,7 +1,27 @@
+const mongoose = require('mongoose');
 
-const mongoose = require("mongoose");
 
-const ExUseSchema = new mongoose.Schema({
-        // preencher com o id_user, id_exer e no enum colocar sim
+const userExercSchema = new mongoose.Schema({
+  id_Exer_fk: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Exer', 
+    required: true, 
+  },
+  id_User_fk: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'user', 
+    required: true, 
+  },
+  exer_res: {
+    type: String,
+    enum: ['Feito', 'Não'], 
+    default: 'Não', 
+  },
+}, { versionKey: false }); 
 
-});
+
+const UserExerc = mongoose.model('UserExerc', userExercSchema);
+
+
+module.exports = UserExerc;
+
