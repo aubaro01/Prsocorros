@@ -13,8 +13,8 @@ const Header = () => (
         </div>
       </div>
       <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
-        Remoção de Vítima no Auditório<br />
-        - Consciente + Inconsciente
+       <h1> Remoção de Vítima no Auditório<br /></h1>
+         <h5>- Consciente + Inconsciente</h5>
       </p>
     </div>
   </header>
