@@ -6,7 +6,7 @@ export default function PageEx4() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     nome: "",
-    circuito: "",
+    pass: "",
     concluido: false,
   });
   const [submitted, setSubmitted] = useState(false);
@@ -28,80 +28,136 @@ export default function PageEx4() {
   const handleModalClose = () => {
     setShowModal(false);
     setSubmitted(false);
-    setFormData({ nome: "", circuito: "", concluido: false });
+    setFormData({ nome: "", pass: "", concluido: false });
   };
 
   // Array com as etapas do exercício
   const steps = [
     {
-      id: 1,
-      title: "Vídeo Demonstrativo",
+      id: 0,
+      title: "Vídeo instrutivo",
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://www.youtube.com/embed/CMKw77fbkOs"
+              src="https://youtu.be/KD7Eon16Ars?si=cm-cEuTegeP9pSBf"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Este vídeo demonstra a técnica correta para realizar o agachamento com salto.
+            Este vídeo demonstra a técnica correta para realizar do exercício.
             Observe atentamente os movimentos antes de começar a praticar.
           </p>
         </>
       ),
     },
     {
-      id: 2,
-      title: "Posição Inicial",
+      id: 1,
+      title: "Vítima Consciente",
       content: (
         <>
           <div className="text-center mb-4">
             <img
               src="/imag.jpg"
-              alt="Posição Inicial"
+              alt="vítima dentro do auditorio"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Fique em pé com os pés afastados na largura dos ombros e braços relaxados ao lado do corpo.
-            Esta posição é a base para um bom agachamento e proporciona estabilidade durante o exercício.
+           Avaliar, incentivar e auxiliar ao trnsporte em cadeira de rodas.
           </p>
+          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Com ajudar de outros voluntários
+          </p>
+          <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              <li className="mb-2">Levante a vítima em segurança</li>
+              <li className="mb-2">Coloque ela bem posicionada em relação a cadeira</li>
+              <li className="mb-2">Certifiquem-se que ela está em segurança</li>
+            </ul>
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Após esses passsos podem transportar a vítima
+              </p>
         </>
       ),
     },
     {
-      id: 3,
-      title: "Agachamento",
+      id: 2,
+      title: "Vítima Inconsciente",
       content: (
         <div className="row">
-          <div className="col-md-6">
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Dobre os joelhos e quadris, abaixando o corpo como se fosse sentar em uma cadeira invisível.
+          <div className="col-md-12">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
+              Para o transporte de uma vítima inconsciente, há vários cuidados a serem tomados. Siga os passos abaixo:
             </p>
-            <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              <li className="mb-2">Mantenha o peito erguido</li>
-              <li className="mb-2">Coluna em posição neutra</li>
-              <li className="mb-2">Joelhos alinhados com os pés</li>
-              <li>Não ultrapasse a linha dos dedos com os joelhos</li>
-            </ul>
-          </div>
-          <div className="col-md-6 text-center">
-            <img
-              src="/imag.jpg"
-              alt="Agachamento"
-              className="img-fluid rounded"
-              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
-            />
+    
+            {/* Passo 1 - Avaliar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/passo1.jpg"
+                  alt="Passo 1: Avaliar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1 - Avaliar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Verifique se a vítima está usando algo que possa colocá-la em perigo (ex.: objetos pontiagudos, acessórios).</li>
+                  <li className="mb-2">Certifique-se de que o ambiente é seguro para realizar o transporte.</li>
+                  <li>Verifique se há riscos adicionais, como tráfego de veículos ou incêndio.</li>
+                </ul>
+              </div>
+            </div>
+    
+            {/* Passo 2 - Posicionar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/passo2.jpg"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+    
+            {/* Passo 3 - Transportar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/passo3.jpg"
+                  alt="Passo 3: Transportar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       ),
     },
     {
-      id: 4,
-      title: "Salto",
+      id: 3,
+      title: "Cha",
       content: (
         <div className="row">
           <div className="col-md-6 text-center mb-4 mb-md-0">
@@ -137,12 +193,11 @@ export default function PageEx4() {
           <div className="d-flex justify-content-between align-items-center">
             <h1 className="m-0" style={{ fontSize: "1.8rem", fontWeight: "700" }}>SAV</h1>
             <div className="py-1 px-3" style={{ border: "1px solid rgba(31, 26, 26, 0.3)", borderRadius: "4px" }}>
-              Exercício 4
+              Exercício 2
             </div>
           </div>
           <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
             Remoção de Vítima no Auditório<br></br>
-            - Consciente + Insconsciente
           </p>
         </div>
       </header>
@@ -224,7 +279,7 @@ export default function PageEx4() {
                   color: "#ecf0f1",
                 }}
               >
-                Resumo e Conclusão do Exercício
+                Resumo do Exercício
               </h4>
               <div className="row">
                 <div className="col-md-6">
@@ -329,8 +384,8 @@ export default function PageEx4() {
                   textAlign: "center",
                 }}
               >
-                Parabéns! Você completou todas as etapas do exercício de Agachamento com Salto.
-                Este exercício é excelente para fortalecer as pernas e melhorar a explosão muscular.
+                <strong>Conclusão do Exercício</strong>
+   
               </p>
               <div className="text-center">
                 <Button
@@ -356,7 +411,7 @@ export default function PageEx4() {
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
-            © {new Date().getFullYear()} SAV. Todos os direitos reservados.
+            © {new Date().getFullYear()} SAV. <br></br>Todos os direitos reservados.
           </p>
         </div>
       </footer>

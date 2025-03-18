@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const imageUrl = "/imag.jpg";
+const imageUrl = "/assets/sav1.jpg";
 
 export default function LandingPage() {
   const handleSubmit = async (event) => {
@@ -38,14 +38,12 @@ export default function LandingPage() {
       {/* Header */}
       <header className="bg-dark text-white py-4 text-center">
         <div className="container">
-          <h1 className="fw-bold">SAV</h1>
-          <p className="fs-5">Formação para os primeiros socorros</p>
+          <h1 className="fw-bold">S.A.V</h1>
+          <p className="fs-1">Formação para os primeiros socorros</p>
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-grow-1">
-        {/* Welcome Section */}
         <section className="container text-center py-5">
           <h2 className="fw-bold">
             Bem-vindo(a) à <strong>Formação para Primeiros Socorros</strong>
@@ -69,7 +67,11 @@ export default function LandingPage() {
               alt="Imagem do local"
               className="img-fluid w-75 mx-auto d-block"
             />
-            <p className="text-muted mt-3">deserunt mollit anim id est laborum.</p>
+            <p className="text-muted mt-3">Mapa dos pontos de exercícios<br></br>
+            Sector A:  Excepteur sint occaecat cupidatat non proident <br></br>
+            Sector B :  Excepteur sint occaecat cupidatat non proident<br></br>
+            Sector C : Fechado <br></br>
+            </p>
           </div>
         </section>
 
