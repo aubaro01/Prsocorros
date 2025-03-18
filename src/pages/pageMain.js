@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const imageUrl = "/assets/sav1.jpg";
 
 export default function LandingPage() {
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
 
     const formData = {
       nome: event.target.nome.value,
@@ -14,7 +17,7 @@ export default function LandingPage() {
     };
 
     try {
-      const response = await fetch("http://localhost/api/user", {
+      const response = await fetch("https://testedashpro.rf.gd/backend/createUser.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,6 +33,8 @@ export default function LandingPage() {
     } catch (error) {
       console.error("Erro:", error);
       alert("Erro ao enviar inscrição.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -67,10 +72,11 @@ export default function LandingPage() {
               alt="Imagem do local"
               className="img-fluid w-75 mx-auto d-block"
             />
-            <p className="text-muted mt-3">Mapa dos pontos de exercícios<br></br>
-            Sector A:  Excepteur sint occaecat cupidatat non proident <br></br>
-            Sector B :  Excepteur sint occaecat cupidatat non proident<br></br>
-            Sector C : Fechado <br></br>
+            <p className="text-muted mt-3">
+              Mapa dos pontos de exercícios<br />
+              Sector A: Excepteur sint occaecat cupidatat non proident <br />
+              Sector B: Excepteur sint occaecat cupidatat non proident<br />
+              Sector C: Excepteur sint occaecat cupidatat non proident <br />
             </p>
           </div>
         </section>
@@ -93,8 +99,8 @@ export default function LandingPage() {
                 id="nome"
                 className="form-control"
                 placeholder="Digite o seu Primeiro e Último nome"
-                min="5"
-                max="30"
+                minLength="5"
+                maxLength="30"
                 required
               />
             </div>
@@ -107,8 +113,8 @@ export default function LandingPage() {
                 id="circuito"
                 className="form-control"
                 placeholder="Digite o seu Circuito *"
-                min="1"
-                max="3"
+                minLength="1"
+                maxLength="3"
                 required
               />
               <div className="form-text"><em>*</em> Números e letra.</div>
@@ -129,11 +135,11 @@ export default function LandingPage() {
             </div>
 
             {/* Submit Button */}
-            <button type="submit" className="btn btn-dark w-100">
-              Submeter Dados
+            <button type="submit" className="btn btn-dark w-100" disabled={loading}>
+              {loading ? "A Submeter..." : "Submeter Dados"}
             </button>
           </form>
-        </section>
+        </section>        
       </main>
 
       {/* Footer */}

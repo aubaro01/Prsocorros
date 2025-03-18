@@ -55,19 +55,21 @@ export default function PageEx4() {
       id: 1,
       title: "Encorajar Tossir",
       content: (
-        <>
-          <div className="text-center mb-4">
+        <div className="row">
+          <div className="col-md-6">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Enquanto a vítima conseguir tossir, encoraje a tosse na tentativa de expelir o corpo estranho
+            </p>
+          </div>
+          <div className="col-md-6 text-center">
             <img
-              src="/imag.jpg"
-              alt="Posição Inicial"
+              src="/assets/dva1.png"
+              alt="Agachamento"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
           </div>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Enquanto a vítima conseguir tossir, encoraje a tosse na tentativa de expelir o corpo estranho
-          </p>
-        </>
+        </div>
       ),
     },
     {
@@ -89,7 +91,7 @@ export default function PageEx4() {
           </div>
           <div className="col-md-6 text-center">
             <img
-              src="/imag.jpg"
+              src="/assets/dva2.png"
               alt="Agachamento"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
@@ -113,7 +115,7 @@ export default function PageEx4() {
               <div className="row mb-4 align-items-center">
                 <div className="col-md-6 text-center">
                   <img
-                    src="/passo1.jpg"
+                    src="/assets/dva3.png"
                     alt="Passo 1: Posicionar-se atrás da vítima"
                     className="img-fluid rounded"
                     style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -131,7 +133,7 @@ export default function PageEx4() {
               <div className="row mb-4 align-items-center">
                 <div className="col-md-6 text-center order-md-2">
                   <img
-                    src="/passo2.jpg"
+                    src="/assets/dva4.png"
                     alt="Passo 2: Posição de segurança"
                     className="img-fluid rounded"
                     style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -149,7 +151,7 @@ export default function PageEx4() {
               <div className="row mb-4 align-items-center">
                 <div className="col-md-6 text-center">
                   <img
-                    src="/passo3.jpg"
+                    src="/assets/dva5.png"
                     alt="Passo 3: Posicionar os pés"
                     className="img-fluid rounded"
                     style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -167,7 +169,7 @@ export default function PageEx4() {
               <div className="row mb-4 align-items-center">
                 <div className="col-md-6 text-center order-md-2">
                   <img
-                    src="/passo4.jpg"
+                    src="/assets/dva6.png"
                     alt="Passo 4: Alinhar joelhos"
                     className="img-fluid rounded"
                     style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
