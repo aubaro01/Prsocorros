@@ -440,16 +440,14 @@ export default function PageEx4() {
 
       {/* Modal de Registro */}
       <Modal show={showModal} onHide={handleModalClose} centered>
-        <Modal.Header closeButton style={{ border: "none" }}>
-          <Modal.Title style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-            Registrar Exercício
-          </Modal.Title>
+        <Modal.Header closeButton className="border-0">
+          <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="p-4">
           {!submitted ? (
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formNome">
-                <Form.Label>Nome Completo</Form.Label>
+                <Form.Label className="fw-semibold">Nome Completo</Form.Label>
                 <Form.Control
                   type="text"
                   name="nome"
@@ -457,62 +455,41 @@ export default function PageEx4() {
                   onChange={handleChange}
                   placeholder="Digite seu nome completo"
                   required
-                  style={{ fontSize: "1rem", padding: "0.75rem" }}
+                  className="p-2"
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formCircuito">
-                <Form.Label>Número do Circuito</Form.Label>
+              <Form.Group className="mb-3" controlId="formPass">
+                <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
                 <Form.Control
-                  type="number"
-                  name="circuito"
-                  value={formData.circuito}
+                  type="password"
+                  name="pass"
+                  value={formData.pass}
                   onChange={handleChange}
-                  placeholder="Digite o número do circuito"
-                  min="1"
+                  placeholder="Digite seu código de acesso"
                   required
-                  style={{ fontSize: "1rem", padding: "0.75rem" }}
+                  className="p-2"
                 />
               </Form.Group>
-              <Form.Group className="mb-4" controlId="formConcluido">
+              <Form.Group className="mb-3" controlId="formConcluido">
                 <Form.Check
                   type="checkbox"
                   name="concluido"
                   checked={formData.concluido}
                   onChange={handleChange}
                   label="Exercício concluído"
+                  className="fw-semibold"
                 />
               </Form.Group>
-              <Button
-                type="submit"
-                style={{
-                  backgroundColor: "#03a87c",
-                  border: "none",
-                  width: "100%",
-                  padding: "0.75rem",
-                  fontSize: "1rem",
-                }}
-              >
-                Enviar
-              </Button>
+              <div className="text-center">
+                <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
+                  Enviar
+                </Button>
+              </div>
             </Form>
           ) : (
-            <div className="text-center py-3">
-              <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✓</div>
-              <h4 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "1rem" }}>
-                Registro Concluído!
-              </h4>
-              <p className="mb-4" style={{ fontSize: "1.1rem", color: "#292929" }}>
-                Seu exercício foi registrado com sucesso.
-              </p>
-              <Button
-                onClick={handleModalClose}
-                style={{
-                  backgroundColor: "#03a87c",
-                  border: "none",
-                  padding: "0.75rem 2rem",
-                  fontSize: "1rem",
-                }}
-              >
+            <div className="text-center">
+              <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
+              <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
                 Fechar
               </Button>
             </div>
