@@ -98,7 +98,7 @@ export default function LandingPage() {
                 type="text"
                 id="nome"
                 className="form-control"
-                placeholder="Digite o seu Primeiro e Último nome"
+                placeholder="Digite o seu primeiro e último nome"
                 minLength="5"
                 maxLength="30"
                 required
@@ -112,7 +112,7 @@ export default function LandingPage() {
                 type="text"
                 id="circuito"
                 className="form-control"
-                placeholder="Digite o seu Circuito *"
+                placeholder="Digite o seu circuito *"
                 minLength="1"
                 maxLength="3"
                 required
