@@ -62,6 +62,9 @@ export default function LandingPage() {
           <p className="text-muted">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <figcaption class="blockquote-footer">
+            Talvez um <cite title="Source Title">Sal 4:1</cite>
+            </figcaption>
         </section>
 
         {/* Image Section */}
@@ -74,9 +77,9 @@ export default function LandingPage() {
             />
             <p className="text-muted mt-3">
               Mapa dos pontos de exercícios<br />
-              Sector A: Excepteur sint occaecat cupidatat non proident <br />
-              Sector B: Excepteur sint occaecat cupidatat non proident<br />
-              Sector C: Excepteur sint occaecat cupidatat non proident <br />
+              Sector A: <strong>Exercícios 1 & 2,</strong> perto dos perdidos e achados  <br />
+              Sector B: <strong>Exercícios 3,</strong> perto das casas de banho<br />
+              Sector C: <strong>Exercícios 4,</strong> entrada do auditório<br />
             </p>
           </div>
         </section>
