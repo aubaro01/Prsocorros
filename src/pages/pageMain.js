@@ -69,6 +69,9 @@ export default function LandingPage() {
           <figcaption class="blockquote-footer">
             Talvez um <cite title="Source Title">Sal 4:1</cite>
           </figcaption>
+          <Button variant="btn btn-dark" onClick={() => setShowModal(true)}>
+              Ver Instruções Detalhadas
+            </Button>
         </section>
 
         {/* Image Section */}
@@ -85,10 +88,6 @@ export default function LandingPage() {
               Sector B: <strong>Exercícios 3,</strong> perto das casas de banho<br />
               Sector C: <strong>Exercícios 4,</strong> entrada do auditório<br />
             </p>
-            {/* Botão para abrir o modal com as instruções */}
-            <Button variant="primary" onClick={() => setShowModal(true)}>
-              Ver Instruções Detalhadas
-            </Button>
           </div>
         </section>
 
@@ -160,8 +159,6 @@ export default function LandingPage() {
           Todos os direitos reservados.
         </p>
       </footer>
-
-       {/* Modal com as instruções */}
        <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Instruções Detalhadas para os Exercícios</Modal.Title>
