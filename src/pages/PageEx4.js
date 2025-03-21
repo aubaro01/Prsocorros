@@ -172,6 +172,243 @@ export default function PageEx4() {
         </>
       ),
     },
+    // Nova seção para vídeos adicionais
+    {
+      id: 4,
+      title: "Vídeos Adicionais de Treinamento",
+      content: (
+        <div className="row">
+          <div className="col-md-12">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
+              Assista aos vídeos adicionais para complementar seu treinamento e aprofundar seu conhecimento sobre técnicas de transporte.
+            </p>
+            
+            {/* Primeiro vídeo adicional */}
+            <div className="mb-5">
+              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Técnicas Avançadas de Transporte</h4>
+              <div className="ratio ratio-16x9 mb-3">
+                <iframe
+                  src="--"
+                  title="Técnicas avançadas de transporte"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                Este vídeo apresenta técnicas avançadas para o transporte de vítimas em diferentes situações de emergência.
+                Aprenda métodos para superar obstáculos e adaptar o transporte em condições adversas.
+              </p>
+            </div>
+            
+            {/* Segundo vídeo adicional */}
+            <div className="mb-5">
+              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Transporte em Equipe</h4>
+              <div className="ratio ratio-16x9 mb-3">
+                <iframe
+                  src="--"
+                  title="Transporte em equipe"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                Demonstração de técnicas de coordenação em equipe para o transporte eficiente e seguro de vítimas.
+                Este vídeo enfatiza a comunicação e sincronização necessárias entre os socorristas.
+              </p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    // Nova seção para orientações adicionais
+    {
+      id: 5,
+      title: "Orientações Complementares",
+      content: (
+        <div className="row">
+          <div className="col-md-12">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
+              Para garantir a segurança e eficácia durante o transporte de vítimas, observe as seguintes orientações complementares:
+            </p>
+            
+            {/* Orientações em formato de cards */}
+            <div className="row mb-4">
+              {/* Card 1 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}>
+                  <div className="card-body">
+                    <div className="text-center mb-3">
+                      <div style={{ 
+                        width: "60px", 
+                        height: "60px", 
+                        borderRadius: "50%", 
+                        backgroundColor: "#f39c12", 
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        fontSize: "1.8rem"
+                      }}>
+                        <i className="bi bi-shield-check"></i>
+                      </div>
+                    </div>
+                    <h5 className="card-title text-center mb-3" style={{ color: "#f39c12" }}>Equipamentos de Proteção</h5>
+                    <ul style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef", paddingLeft: "1.2rem" }}>
+                      <li className="mb-2">Use luvas de proteção</li>
+                      <li className="mb-2">Utilize óculos de segurança quando necessário</li>
+                      <li>Vista coletes refletivos em ambientes com pouca visibilidade</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Card 2 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}>
+                  <div className="card-body">
+                    <div className="text-center mb-3">
+                      <div style={{ 
+                        width: "60px", 
+                        height: "60px", 
+                        borderRadius: "50%", 
+                        backgroundColor: "#f39c12", 
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        fontSize: "1.8rem"
+                      }}>
+                        <i className="bi bi-people"></i>
+                      </div>
+                    </div>
+                    <h5 className="card-title text-center mb-3" style={{ color: "#f39c12" }}>Comunicação</h5>
+                    <ul style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef", paddingLeft: "1.2rem" }}>
+                      <li className="mb-2">Estabeleça comandos claros e objetivos</li>
+                      <li className="mb-2">Defina um líder para coordenar a equipe</li>
+                      <li>Utilize contagem regressiva para sincronizar movimentos</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Card 3 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}>
+                  <div className="card-body">
+                    <div className="text-center mb-3">
+                      <div style={{ 
+                        width: "60px", 
+                        height: "60px", 
+                        borderRadius: "50%", 
+                        backgroundColor: "#f39c12", 
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        fontSize: "1.8rem"
+                      }}>
+                        <i className="bi bi-heart-pulse"></i>
+                      </div>
+                    </div>
+                    <h5 className="card-title text-center mb-3" style={{ color: "#f39c12" }}>Cuidados Especiais</h5>
+                    <ul style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef", paddingLeft: "1.2rem" }}>
+                      <li className="mb-2">Monitore os sinais vitais durante o transporte</li>
+                      <li className="mb-2">Verifique se a vítima está confortável e segura</li>
+                      <li>Evite movimentos bruscos em caso de suspeita de lesão na coluna</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Seção de dicas importantes */}
+            <div className="mt-4 p-4" style={{ backgroundColor: "#1c2833", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)" }}>
+              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Dicas Importantes</h4>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="d-flex align-items-start mb-3">
+                    <div style={{ 
+                      minWidth: "30px", 
+                      height: "30px", 
+                      borderRadius: "50%", 
+                      backgroundColor: "#f39c12", 
+                      color: "#1c2833", 
+                      display: "flex", 
+                      alignItems: "center", 
+                      justifyContent: "center", 
+                      marginRight: "15px", 
+                      marginTop: "3px" 
+                    }}>
+                      <i className="bi bi-check-lg"></i>
+                    </div>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                      <strong>Avalie constantemente:</strong> Verifique regularmente o estado da vítima durante todo o processo de transporte.
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-start mb-3">
+                    <div style={{ 
+                      minWidth: "30px", 
+                      height: "30px", 
+                      borderRadius: "50%", 
+                      backgroundColor: "#f39c12", 
+                      color: "#1c2833", 
+                      display: "flex", 
+                      alignItems: "center", 
+                      justifyContent: "center", 
+                      marginRight: "15px", 
+                      marginTop: "3px" 
+                    }}>
+                      <i className="bi bi-check-lg"></i>
+                    </div>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                      <strong>Mantenha a postura:</strong> Cuide da sua própria postura para evitar lesões ao transportar a vítima.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="d-flex align-items-start mb-3">
+                    <div style={{ 
+                      minWidth: "30px", 
+                      height: "30px", 
+                      borderRadius: "50%", 
+                      backgroundColor: "#f39c12", 
+                      color: "#1c2833", 
+                      display: "flex", 
+                      alignItems: "center", 
+                      justifyContent: "center", 
+                      marginRight: "15px", 
+                      marginTop: "3px" 
+                    }}>
+                      <i className="bi bi-check-lg"></i>
+                    </div>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                      <strong>Planeje o trajeto:</strong> Identifique o melhor percurso antes de iniciar o transporte.
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-start mb-3">
+                    <div style={{ 
+                      minWidth: "30px", 
+                      height: "30px", 
+                      borderRadius: "50%", 
+                      backgroundColor: "#f39c12", 
+                      color: "#1c2833", 
+                      display: "flex", 
+                      alignItems: "center", 
+                      justifyContent: "center", 
+                      marginRight: "15px", 
+                      marginTop: "3px" 
+                    }}>
+                      <i className="bi bi-check-lg"></i>
+                    </div>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
+                      <strong>Treine regularmente:</strong> Pratique as técnicas de transporte com frequência para manter-se preparado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (
@@ -317,6 +554,28 @@ export default function PageEx4() {
                       Posicionar-se corretamente
                     </p>
                   </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      5
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Assistir aos vídeos adicionais
+                    </p>
+                  </div>
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex align-items-center mb-3">
@@ -361,6 +620,28 @@ export default function PageEx4() {
                     </div>
                     <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
                       Executar o salto explosivo
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      6
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Revisar orientações complementares
                     </p>
                   </div>
                 </div>
