@@ -39,7 +39,7 @@ export default function PageEx4() {
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://youtu.be/wTG1cdgiarw?si=a9HNCD-pTxOjNRH5"
+              src="--"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>

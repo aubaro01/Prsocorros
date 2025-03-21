@@ -40,13 +40,13 @@ export default function PageEx4() {
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://www.youtube.com/embed/CMKw77fbkOs"
+              src="--"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Este vídeo demonstra a técnica correta para realizar o agachamento com salto.
+            Este vídeo demonstra a técnica correta para realizar o exercício.
             Observe atentamente os movimentos antes de começar a praticar.
           </p>
         </>
@@ -70,8 +70,8 @@ export default function PageEx4() {
           </div>
           <div className="col-md-6 text-center">
             <img
-              src="/imag.jpg"
-              alt="Agachamento"
+              src="/assets/pls1.png"
+              alt="Ver se tem condições para socorrer"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
@@ -93,7 +93,7 @@ export default function PageEx4() {
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
-                  src="/passo1.jpg"
+                  src="/assets/pls2.png"
                   alt="Passo 1: Avaliar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -113,7 +113,7 @@ export default function PageEx4() {
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
                 <img
-                  src="/passo2.jpg"
+                  src="/assets/pls3.png"
                   alt="Passo 2: Posicionar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -133,7 +133,7 @@ export default function PageEx4() {
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
-                  src="/passo3.jpg"
+                  src="/assets/pls4.png"
                   alt="Passo 3: Transportar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -148,6 +148,64 @@ export default function PageEx4() {
                 </ul>
               </div>
             </div>
+             {/* Passo 2 - Posicionar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/pls5.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 3 - Transportar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/pls6.png"
+                  alt="Passo 3: Transportar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 2 - Posicionar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/pls7.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       ),
@@ -159,7 +217,7 @@ export default function PageEx4() {
         <>
           <div className="text-center mb-4">
             <img
-              src="/imag.jpg"
+              src="/assets/pls1.png"
               alt="Posição Inicial"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
@@ -176,7 +234,6 @@ export default function PageEx4() {
 
   return (
     <div className="exercise-page">
-      {/* Header com design escuro simplificado */}
       <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
@@ -186,13 +243,12 @@ export default function PageEx4() {
             </div>
           </div>
           <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
-          POSIÇÃO LATERAL DE SEGURANÇA (PLS)<br></br>
+          POSIÇÃO LATERAL DE SEGURANÇA (PLS)<br />
           </p>
         </div>
       </header>
 
       <main className="container py-5">
-        {/* Título do exercício com design escuro simplificado */}
         <div className="text-center mb-5">
           <h2
             style={{
@@ -209,11 +265,10 @@ export default function PageEx4() {
             style={{ width: "50px", height: "3px", backgroundColor: "#f39c12", marginBottom: "1.5rem" }}
           ></div>
           <p style={{ fontSize: "1.2rem", color: "black" }}>
-            hashahsahsahsahs ----------
+
           </p>
         </div>
 
-        {/* Todas as etapas são mostradas em sequência com o mesmo estilo escuro */}
         <div className="row">
           <div className="col-lg-10 mx-auto">
             {steps.map((step) => (
@@ -257,7 +312,6 @@ export default function PageEx4() {
               </section>
             ))}
 
-            {/* Seção combinada de Resumo e Conclusão */}
             <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
               <h4
                 style={{
@@ -373,6 +427,7 @@ export default function PageEx4() {
                   textAlign: "center",
                 }}
               >
+                <br />
                 <strong>Conclusão do exercício</strong>
                 </p>
               <div className="text-center">
@@ -399,7 +454,7 @@ export default function PageEx4() {
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
-            © {new Date().getFullYear()} SAV. <br></br>Todos os direitos reservados.
+            © {new Date().getFullYear()} SAV. <br />Todos os direitos reservados.
           </p>
         </div>
       </footer>
