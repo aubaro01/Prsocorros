@@ -7,6 +7,7 @@ import Page3 from './pages/PageEx3';
 import Page4 from './pages/PageEx4';
 import ErroPage from './pages/erroPage';
 import './App.css';
+//import {header} from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
