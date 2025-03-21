@@ -40,7 +40,7 @@ export default function PageEx4() {
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://www.youtube.com/embed/CMKw77fbkOs"
+              src="--"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>
@@ -176,18 +176,18 @@ export default function PageEx4() {
 
   return (
     <div className="exercise-page">
-      {/* Header com design escuro simplificado */}
       <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <h1 className="m-0" style={{ fontSize: "1.8rem", fontWeight: "700" }}>SAV</h1>
             <div className="py-1 px-3" style={{ border: "1px solid rgba(31, 26, 26, 0.3)", borderRadius: "4px" }}>
-              Exercício 3
+              Exercício 4
             </div>
           </div>
           <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
-          POSIÇÃO LATERAL DE SEGURANÇA (PLS)<br></br>
-          </p>
+          Suporte Básico de vida (SBV)<br />
+                 <span>- Transporte de Vítima em Maca</span>
+                 </p>
         </div>
       </header>
 
@@ -202,14 +202,16 @@ export default function PageEx4() {
               marginBottom: "1rem",
             }}
           >
-            Posição Lateral de Segurança
+            Suporte Básico de vida<br />
+                     + <br />
+            Transporte de Vítima em Maca
           </h2>
           <div
             className="mx-auto"
             style={{ width: "50px", height: "3px", backgroundColor: "#f39c12", marginBottom: "1.5rem" }}
           ></div>
           <p style={{ fontSize: "1.2rem", color: "black" }}>
-            hashahsahsahsahs ----------
+            Lições para suporte básico de vida e transporte de vítimas em Maca
           </p>
         </div>
 
@@ -257,7 +259,6 @@ export default function PageEx4() {
               </section>
             ))}
 
-            {/* Seção combinada de Resumo e Conclusão */}
             <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
               <h4
                 style={{

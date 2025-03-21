@@ -40,7 +40,7 @@ export default function PageEx4() {
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://youtu.be/KD7Eon16Ars?si=cm-cEuTegeP9pSBf"
+              src="--"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>
@@ -59,7 +59,7 @@ export default function PageEx4() {
         <>
           <div className="text-center mb-4">
             <img
-              src="/imag.jpg"
+              src="/assets/rva.png"
               alt="vítima dentro do auditorio"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
@@ -96,7 +96,7 @@ export default function PageEx4() {
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
-                  src="/passo1.jpg"
+                  src="/assets/rva1.png"
                   alt="Passo 1: Avaliar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -112,11 +112,11 @@ export default function PageEx4() {
               </div>
             </div>
     
-            {/* Passo 2 - Posicionar */}
+            
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
                 <img
-                  src="/passo2.jpg"
+                  src="/assets/rva2.png"
                   alt="Passo 2: Posicionar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -136,7 +136,7 @@ export default function PageEx4() {
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
-                  src="/passo3.jpg"
+                  src="/assets/rva4.png"
                   alt="Passo 3: Transportar a vítima"
                   className="img-fluid rounded"
                   style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
@@ -157,12 +157,12 @@ export default function PageEx4() {
     },
     {
       id: 3,
-      title: "Cha",
+      title: "Transporte de vítima inconsciente",
       content: (
         <div className="row">
           <div className="col-md-6 text-center mb-4 mb-md-0">
             <img
-              src="/imag.jpg"
+              src="/assets/rva5.png"
               alt="Salto"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
@@ -180,6 +180,45 @@ export default function PageEx4() {
               Aterrisse suavemente, voltando para a posição de agachamento, amortecendo o impacto.
             </p>
           </div>
+           
+          <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/rva6.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 3 - Transportar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/rva7.png"
+                  alt="Passo 3: Transportar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                </ul>
+              </div>
+            </div>
+            
         </div>
       ),
     },
@@ -187,7 +226,6 @@ export default function PageEx4() {
 
   return (
     <div className="exercise-page">
-      {/* Header com design escuro simplificado */}
       <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
@@ -203,7 +241,6 @@ export default function PageEx4() {
       </header>
 
       <main className="container py-5">
-        {/* Título do exercício com design escuro simplificado */}
         <div className="text-center mb-5">
           <h2
             style={{
@@ -213,18 +250,17 @@ export default function PageEx4() {
               marginBottom: "1rem",
             }}
           >
-            Agachamento com Salto
+            Remoção de Vítima no Auditório
           </h2>
           <div
             className="mx-auto"
             style={{ width: "50px", height: "3px", backgroundColor: "#f39c12", marginBottom: "1.5rem" }}
           ></div>
           <p style={{ fontSize: "1.2rem", color: "black" }}>
-            Aprenda a técnica correta do agachamento com salto para aprimorar sua força e potência
+            Retirada de vítima Consciente e inconsciente do auditório.
           </p>
         </div>
 
-        {/* Todas as etapas são mostradas em sequência com o mesmo estilo escuro */}
         <div className="row">
           <div className="col-lg-10 mx-auto">
             {steps.map((step) => (
@@ -268,7 +304,6 @@ export default function PageEx4() {
               </section>
             ))}
 
-            {/* Seção combinada de Resumo e Conclusão */}
             <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
               <h4
                 style={{
@@ -500,3 +535,60 @@ export default function PageEx4() {
     </div>
   );
 }
+
+/*
+
+textos para usar
+
+Texto 1: Vídeo Instrutivo
+Antes: "Assista ao vídeo abaixo para aprender a técnica correta para a execução do exercício. Preste atenção nos movimentos antes de começar a prática."
+
+Melhorado: "Assista ao vídeo abaixo para entender a técnica correta de execução do exercício. Preste atenção aos detalhes dos movimentos antes de começar a prática."
+
+Texto 2: Vítima Consciente
+Antes: "Avalie a situação da vítima, incentive-a a cooperar e ajude no transporte utilizando uma cadeira de rodas, conforme a necessidade."
+
+Melhorado: "Avalie a situação da vítima, incentive-a a colaborar e auxilie no transporte utilizando uma cadeira de rodas, caso necessário."
+
+Antes: "Com a ajuda de outros voluntários, siga os passos abaixo:
+
+Levante a vítima com segurança.
+Posicione a vítima adequadamente na cadeira de rodas.
+Certifique-se de que ela está segura na cadeira."
+Melhorado: "Com o auxílio de outros voluntários, siga as etapas abaixo:
+
+Levante a vítima com segurança.
+Coloque-a na cadeira de rodas de forma adequada.
+Verifique se ela está segura na cadeira antes de iniciar o transporte."
+Texto 3: Vítima Inconsciente
+Antes: "Para o transporte de uma vítima inconsciente, siga os cuidados abaixo:
+
+Passo 1 - Avaliar Verifique se a vítima não está com objetos que possam representer perigo (ex.: objetos pontiagudos, acessórios perigosos). Certifique-se de que o ambiente está seguro para realizar o transporte. Observe riscos adicionais, como tráfego de veículos ou incêndios próximos."
+
+Melhorado: "Para o transporte de uma vítima inconsciente, siga os cuidados descritos abaixo:
+
+Passo 1 - Avaliação:
+
+Verifique se a vítima está com objetos que possam representar riscos (ex.: objetos pontiagudos ou acessórios perigosos).
+Certifique-se de que o ambiente está seguro para realizar o transporte.
+Observe riscos adicionais, como tráfego de veículos ou incêndios próximos."
+Antes: "Passo 2 - Posicionar Coloque a vítima em uma posição estável, de preferência deitada de costas. Alinhe a cabeça, pescoço e coluna da vítima para evitar lesões adicionais. Evite movimentos bruscos durante o manuseio para prevenir complicações."
+
+Melhorado: "Passo 2 - Posicionamento:
+
+Coloque a vítima em uma posição estável, de preferência deitada de costas.
+Alinhe a cabeça, o pescoço e a coluna da vítima para evitar lesões adicionais.
+Evite movimentos bruscos durante o manuseio para prevenir complicações."
+Antes: "Passo 3 - Transportar Utilize técnicas apropriadas para levantar a vítima, como o arrastamento ou a técnica de dois socorristas. Mantenha a vítima estável durante o transporte, evitando movimentos excessivos. Leve a vítima para um local seguro ou aguarde a chegada de profissionais de socorro."
+
+Melhorado: "Passo 3 - Transporte:
+
+Utilize técnicas apropriadas para levantar a vítima, como o arrastamento ou a técnica de dois socorristas.
+Mantenha a vítima estável durante o transporte, evitando movimentos excessivos.
+Transporte a vítima até um local seguro ou aguarde a chegada de profissionais de socorro."
+Texto 4: Transporte de Vítima Inconsciente
+Antes: "A partir da posição de agachamento, impulsione o corpo para cima com um salto explosivo, estendendo completamente os joelhos e quadris. Use os braços para ajudar no impulso, movendo-os para frente e para cima. Aterrisse suavemente, retornando à posição de agachamento para amortecer o impacto."
+
+Melhorado: "A partir da posição de agachamento, impulsione o corpo para cima com um salto explosivo, estendendo completamente os joelhos e os quadris. Use os braços para auxiliar no impulso, movendo-os para frente e para cima. Aterrisse suavemente e retorne à posição de agachamento para amortecer o impacto.
+
+ */
