@@ -5,6 +5,7 @@ import Page1 from './pages/PageEx1';
 import Page2 from './pages/PageEx2';
 import Page3 from './pages/PageEx3';
 import Page4 from './pages/PageEx4';
+import ErroPage from './pages/erroPage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <div>     
         <Routes>
+          <Route path="*" element={<ErroPage />} />
           <Route path="/" element={<PageMain />} />
           <Route path="/page1" element={<Page1 />} />
           <Route path="/page2" element={<Page2 />} />
