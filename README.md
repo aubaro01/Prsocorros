@@ -9,3 +9,11 @@ Os exercícios para cada utilizador dentro da base de dados está definido como 
 <p><strong>Diagrama ER para a base de dados</strong></p>
 
 ![image](https://github.com/user-attachments/assets/8f2ae860-8d8d-44a4-87bc-7b86df00ce95)
+
+
+<h3>Funcionamento</h3><br>
+<p>A cada exercício os "users"</span> na parte final devem preencher um modal que pede 3 coisas:<br>
+    1 - O nome que colocaram no registro;<br>
+    2 - A password que escolheram;<br>
+    3 - Preenchem uma check para mostrarem que realizaram o exercício;
+</p>
