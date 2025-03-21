@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from 'react-bootstrap'; // Importando os componentes Modal e Button do Bootstrap
 
 const imageUrl = "/assets/sav1.jpg";
+const FinalP = "/assets/form.png";
+const modal = "/assets/form1.png";
 
 export default function LandingPage() {
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false); // Estado para controlar a exibição do modal
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -64,7 +68,7 @@ export default function LandingPage() {
           </p>
           <figcaption class="blockquote-footer">
             Talvez um <cite title="Source Title">Sal 4:1</cite>
-            </figcaption>
+          </figcaption>
         </section>
 
         {/* Image Section */}
@@ -81,6 +85,10 @@ export default function LandingPage() {
               Sector B: <strong>Exercícios 3,</strong> perto das casas de banho<br />
               Sector C: <strong>Exercícios 4,</strong> entrada do auditório<br />
             </p>
+            {/* Botão para abrir o modal com as instruções */}
+            <Button variant="primary" onClick={() => setShowModal(true)}>
+              Ver Instruções Detalhadas
+            </Button>
           </div>
         </section>
 
@@ -142,7 +150,7 @@ export default function LandingPage() {
               {loading ? "A Submeter..." : "Submeter Dados"}
             </button>
           </form>
-        </section>        
+        </section>
       </main>
 
       {/* Footer */}
@@ -152,6 +160,37 @@ export default function LandingPage() {
           Todos os direitos reservados.
         </p>
       </footer>
+
+       {/* Modal com as instruções */}
+       <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Instruções Detalhadas para os Exercícios</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Por favor, leiam com atenção os seguintes pontos:</h4><br />
+          <h5>1. Final dos exercícios</h5>
+          <p>No final de cada exercício, vão deparar-se com esta parte, na qual vão ter um resumo do exercício e um botão que vai abrir um formulário .</p>
+          <img
+            src={FinalP}
+            alt="Instruções detalhadas"
+            className="img-fluid w-100 mt-3"
+          />
+          <h5>2. Formulário</h5>
+          <p>Dentro deste formulário vão ter que colocar o nome, password que definiram no criar resgistro.
+            Também devem preencher o check que têm abaixo.
+          </p>
+          <img
+            src={modal}
+            alt="Instruções detalhadas"
+            className="img-fluid w-100 mt-3"
+          />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Fechar
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
