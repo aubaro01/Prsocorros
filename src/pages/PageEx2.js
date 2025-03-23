@@ -46,8 +46,7 @@ export default function PageEx4() {
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Este vídeo demonstra a técnica correta para realizar do exercício.
-            Observe atentamente os movimentos antes de começar a praticar.
+            Assista ao vídeo abaixo para entender a técnica correta de execução do exercício. Preste atenção aos detalhes dos movimentos antes de começar a prática.
           </p>
         </>
       ),
@@ -56,31 +55,26 @@ export default function PageEx4() {
       id: 1,
       title: "Vítima Consciente",
       content: (
-        <>
-          <div className="text-center mb-4">
+        <div className="row align-items-center">
+          <div className="col-md-6 text-center">
             <img
               src="/assets/rva.png"
               alt="vítima dentro do auditorio"
               className="img-fluid rounded"
-              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
-            />
+              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}/>
           </div>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Avaliar, incentivar e auxiliar ao trnsporte em cadeira de rodas.
-          </p>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Com ajudar de outros voluntários
-          </p>
-          <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            <li className="mb-2">Levante a vítima em segurança</li>
-            <li className="mb-2">Coloque ela bem posicionada em relação a cadeira</li>
-            <li className="mb-2">Certifiquem-se que ela está em segurança</li>
-          </ul>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Após esses passsos podem transportar a vítima
-          </p>
-        </>
-      ),
+          <div className="col-md-6">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Avalie a situação da vítima, incentive-a a colaborar e auxilie no transporte utilizando uma cadeira de rodas, caso necessário.
+            </p>
+            <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              <li className="mb-2">Levante a vítima com segurança.</li>
+              <li className="mb-2">Coloque-a na cadeira de rodas de forma adequada.</li>
+              <li className="mb-2">Verifique se ela está segura na cadeira antes de iniciar o transporte.</li>
+            </ul>
+          </div>
+        </div>
+     ),
     },
     {
       id: 2,
@@ -89,10 +83,10 @@ export default function PageEx4() {
         <div className="row">
           <div className="col-md-12">
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
-              Para o transporte de uma vítima inconsciente, há vários cuidados a serem tomados. Siga os passos abaixo:
+              Para o transporte de uma vítima inconsciente, siga os cuidados descritos abaixo:
             </p>
 
-            {/* Passo 1 - Avaliar */}
+            {/* Passo 1 - Avaliação */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
@@ -103,16 +97,16 @@ export default function PageEx4() {
                 />
               </div>
               <div className="col-md-6">
-                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1 - Avaliar</h4>
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1 - Avaliação</h4>
                 <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                  <li className="mb-2">Verifique se a vítima está usando algo que possa colocá-la em perigo (ex.: objetos pontiagudos, acessórios).</li>
-                  <li className="mb-2">Certifique-se de que o ambiente é seguro para realizar o transporte.</li>
-                  <li>Verifique se há riscos adicionais, como tráfego de veículos ou incêndio.</li>
+                  <li className="mb-2">Verifique se a vítima está com objetos que possam representar riscos (ex.: objetos pontiagudos ou acessórios perigosos).</li>
+                  <li className="mb-2">Certifique-se de que o ambiente está seguro para realizar o transporte.</li>
+                  <li>Observe riscos adicionais, como tráfego de veículos ou incêndios próximos.</li>
                 </ul>
               </div>
             </div>
 
-
+            {/* Passo 2 - Posicionamento */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
                 <img
@@ -123,16 +117,16 @@ export default function PageEx4() {
                 />
               </div>
               <div className="col-md-6 order-md-1">
-                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionamento</h4>
                 <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
                   <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
-                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
-                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                  <li className="mb-2">Alinhe a cabeça, o pescoço e a coluna da vítima para evitar lesões adicionais.</li>
+                  <li>Evite movimentos bruscos durante o manuseio para prevenir complicações.</li>
                 </ul>
               </div>
             </div>
 
-            {/* Passo 3 - Transportar */}
+            {/* Passo 3 - Transporte */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
@@ -143,11 +137,11 @@ export default function PageEx4() {
                 />
               </div>
               <div className="col-md-6">
-                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transporte</h4>
                 <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
-                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
-                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                  <li className="mb-2">Utilize técnicas apropriadas para levantar a vítima, como o arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos excessivos.</li>
+                  <li>Transporte a vítima até um local seguro ou aguarde a chegada de profissionais de socorro.</li>
                 </ul>
               </div>
             </div>
@@ -159,7 +153,7 @@ export default function PageEx4() {
       id: 3,
       title: "Transporte de vítima inconsciente",
       content: (
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-md-6 text-center mb-4 mb-md-0">
             <img
               src="/assets/rva5.png"
@@ -174,51 +168,12 @@ export default function PageEx4() {
               estendendo completamente os joelhos e quadris.
             </p>
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Use os braços para ajudar no impulso, movendo-os para frente e para cima.
+              Use os braços para auxiliar no impulso, movendo-os para frente e para cima.
             </p>
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Aterrisse suavemente, voltando para a posição de agachamento, amortecendo o impacto.
+              Aterrisse suavemente e retorne à posição de agachamento para amortecer o impacto.
             </p>
           </div>
-
-          <div className="row mb-4 align-items-center">
-            <div className="col-md-6 text-center order-md-2">
-              <img
-                src="/assets/rva6.png"
-                alt="Passo 2: Posicionar a vítima"
-                className="img-fluid rounded"
-                style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-              />
-            </div>
-            <div className="col-md-6 order-md-1">
-              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
-              <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
-                <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
-                <li>Evite movimentos bruscos que possam agravar lesões.</li>
-              </ul>
-            </div>
-          </div>
-          {/* Passo 3 - Transportar */}
-          <div className="row mb-4 align-items-center">
-            <div className="col-md-6 text-center">
-              <img
-                src="/assets/rva7.png"
-                alt="Passo 3: Transportar a vítima"
-                className="img-fluid rounded"
-                style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-              />
-            </div>
-            <div className="col-md-6">
-              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
-              <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
-                <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
-                <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       ),
     },
