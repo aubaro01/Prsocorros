@@ -109,7 +109,7 @@ export default function PageEx4() {
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
               A manobra de Heimlich é uma técnica de primeiros socorros usada para desobstruir as vias aéreas de uma pessoa que está engasgada. Siga os passos abaixo:
             </p>
-    
+
             {/* Passo 1 */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -127,7 +127,7 @@ export default function PageEx4() {
                 </p>
               </div>
             </div>
-    
+
             {/* Passo 2 */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
@@ -141,11 +141,11 @@ export default function PageEx4() {
               <div className="col-md-6 order-md-1">
                 <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2</h4>
                 <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                  Feche o punho de uma mão e posicione-o acima do umbigo da vítima, com o polegar voltado contra o abdômen da vítima. 
+                  Feche o punho de uma mão e posicione-o acima do umbigo da vítima, com o polegar voltado contra o abdômen da vítima.
                 </p>
               </div>
             </div>
-    
+
             {/* Passo 3 */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -163,7 +163,7 @@ export default function PageEx4() {
                 </p>
               </div>
             </div>
-    
+
             {/* Passo 4 */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
@@ -196,6 +196,30 @@ export default function PageEx4() {
           </div>
         </div>
       ),
+    },
+    {
+      id: 4,
+      title: "Em caso de vítima inconsciente",
+      content: (
+        <div className="row align-items-center">
+          <div className="col-md-6">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+              Se a vítima ficar inconsciente:<br />
+               - Ligar para o 112<br />
+               - Iniciar o suporte básico de vida
+            </p>
+          </div>
+          <div className="col-md-6 text-center">
+            <img
+              src="/assets/dva7.png"
+              alt="Em caso de Desmaio"
+              className="img-fluid rounded"
+              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
+            />
+          </div>
+        </div>
+      ),
+
     },
   ];
 

@@ -66,19 +66,19 @@ export default function PageEx4() {
             />
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-           Avaliar, incentivar e auxiliar ao trnsporte em cadeira de rodas.
+            Avaliar, incentivar e auxiliar ao trnsporte em cadeira de rodas.
           </p>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Com ajudar de outros voluntários
           </p>
           <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              <li className="mb-2">Levante a vítima em segurança</li>
-              <li className="mb-2">Coloque ela bem posicionada em relação a cadeira</li>
-              <li className="mb-2">Certifiquem-se que ela está em segurança</li>
-            </ul>
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Após esses passsos podem transportar a vítima
-              </p>
+            <li className="mb-2">Levante a vítima em segurança</li>
+            <li className="mb-2">Coloque ela bem posicionada em relação a cadeira</li>
+            <li className="mb-2">Certifiquem-se que ela está em segurança</li>
+          </ul>
+          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Após esses passsos podem transportar a vítima
+          </p>
         </>
       ),
     },
@@ -91,7 +91,7 @@ export default function PageEx4() {
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
               Para o transporte de uma vítima inconsciente, há vários cuidados a serem tomados. Siga os passos abaixo:
             </p>
-    
+
             {/* Passo 1 - Avaliar */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -111,8 +111,8 @@ export default function PageEx4() {
                 </ul>
               </div>
             </div>
-    
-            
+
+
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
                 <img
@@ -131,7 +131,7 @@ export default function PageEx4() {
                 </ul>
               </div>
             </div>
-    
+
             {/* Passo 3 - Transportar */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -180,45 +180,45 @@ export default function PageEx4() {
               Aterrisse suavemente, voltando para a posição de agachamento, amortecendo o impacto.
             </p>
           </div>
-           
+
           <div className="row mb-4 align-items-center">
-              <div className="col-md-6 text-center order-md-2">
-                <img
-                  src="/assets/rva6.png"
-                  alt="Passo 2: Posicionar a vítima"
-                  className="img-fluid rounded"
-                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                />
-              </div>
-              <div className="col-md-6 order-md-1">
-                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
-                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
-                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
-                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
-                </ul>
-              </div>
+            <div className="col-md-6 text-center order-md-2">
+              <img
+                src="/assets/rva6.png"
+                alt="Passo 2: Posicionar a vítima"
+                className="img-fluid rounded"
+                style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+              />
             </div>
-             {/* Passo 3 - Transportar */}
-             <div className="row mb-4 align-items-center">
-              <div className="col-md-6 text-center">
-                <img
-                  src="/assets/rva7.png"
-                  alt="Passo 3: Transportar a vítima"
-                  className="img-fluid rounded"
-                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                />
-              </div>
-              <div className="col-md-6">
-                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
-                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
-                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
-                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
-                </ul>
-              </div>
+            <div className="col-md-6 order-md-1">
+              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+              <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                <li>Evite movimentos bruscos que possam agravar lesões.</li>
+              </ul>
             </div>
-            
+          </div>
+          {/* Passo 3 - Transportar */}
+          <div className="row mb-4 align-items-center">
+            <div className="col-md-6 text-center">
+              <img
+                src="/assets/rva7.png"
+                alt="Passo 3: Transportar a vítima"
+                className="img-fluid rounded"
+                style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+              />
+            </div>
+            <div className="col-md-6">
+              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+              <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       ),
     },
@@ -420,7 +420,6 @@ export default function PageEx4() {
                 }}
               >
                 <strong>Conclusão do Exercício</strong>
-   
               </p>
               <div className="text-center">
                 <Button
@@ -452,66 +451,66 @@ export default function PageEx4() {
       </footer>
 
       {/* Modal de Registro */}
-           <Modal show={showModal} onHide={handleModalClose} centered>
-             <Modal.Header closeButton className="border-0">
-               <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
-             </Modal.Header>
-             <Modal.Body className="p-4">
-               {!submitted ? (
-                 <Form onSubmit={handleSubmit}>
-                   <Form.Group className="mb-3" controlId="formNome">
-                     <Form.Label className="fw-semibold">Nome Completo</Form.Label>
-                     <Form.Control
-                       type="text"
-                       name="nome"
-                       value={formData.nome}
-                       onChange={handleChange}
-                       placeholder="Digite seu nome completo"
-                       required
-                       className="p-2"
-                     />
-                   </Form.Group>
-                   <Form.Group className="mb-3" controlId="formPass">
-                     <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
-                     <Form.Control
-                       type="password"
-                       name="pass"
-                       value={formData.pass}
-                       onChange={handleChange}
-                       placeholder="Digite seu código de acesso"
-                       required
-                       className="p-2"
-                     />
-                   </Form.Group>
-                   <Form.Group className="mb-3" controlId="formConcluido">
-                     <Form.Check
-                       type="checkbox"
-                       name="concluido"
-                       checked={formData.concluido}
-                       onChange={handleChange}
-                       label="Exercício concluído"
-                       className="fw-semibold"
-                     />
-                   </Form.Group>
-                   <div className="text-center">
-                     <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
-                       Enviar
-                     </Button>
-                   </div>
-                 </Form>
-               ) : (
-                 <div className="text-center">
-                   <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
-                   <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
-                     Fechar
-                   </Button>
-                 </div>
-               )}
-             </Modal.Body>
-           </Modal>
-         </div>
-       );
-     }
+      <Modal show={showModal} onHide={handleModalClose} centered>
+        <Modal.Header closeButton className="border-0">
+          <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="p-4">
+          {!submitted ? (
+            <Form onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formNome">
+                <Form.Label className="fw-semibold">Nome Completo</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="nome"
+                  value={formData.nome}
+                  onChange={handleChange}
+                  placeholder="Digite seu nome completo"
+                  required
+                  className="p-2"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formPass">
+                <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
+                <Form.Control
+                  type="password"
+                  name="pass"
+                  value={formData.pass}
+                  onChange={handleChange}
+                  placeholder="Digite seu código de acesso"
+                  required
+                  className="p-2"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formConcluido">
+                <Form.Check
+                  type="checkbox"
+                  name="concluido"
+                  checked={formData.concluido}
+                  onChange={handleChange}
+                  label="Exercício concluído"
+                  className="fw-semibold"
+                />
+              </Form.Group>
+              <div className="text-center">
+                <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
+                  Enviar
+                </Button>
+              </div>
+            </Form>
+          ) : (
+            <div className="text-center">
+              <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
+              <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
+                Fechar
+              </Button>
+            </div>
+          )}
+        </Modal.Body>
+      </Modal>
+    </div>
+  );
+}
 /*
 
 textos para usar
