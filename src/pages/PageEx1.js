@@ -55,16 +55,16 @@ export default function PageEx4() {
       id: 1,
       title: "Encorajar Tossir",
       content: (
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-md-6">
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Enquanto a vítima conseguir tossir, encoraje a tosse na tentativa de expelir o corpo estranho
+              Enquanto a vítima conseguir tossir, encoraje a tosse na tentativa de expelir o corpo estranho.
             </p>
           </div>
           <div className="col-md-6 text-center">
             <img
               src="/assets/dva1.png"
-              alt="Agachamento"
+              alt="Encorajar Tossir"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
@@ -76,7 +76,7 @@ export default function PageEx4() {
       id: 2,
       title: "Pancadas Interescapulares",
       content: (
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-md-6">
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
               Se a vítima não conseguir tossir, aplique cinco (5) pancadas nas costas.
@@ -92,7 +92,7 @@ export default function PageEx4() {
           <div className="col-md-6 text-center">
             <img
               src="/assets/dva2.png"
-              alt="Agachamento"
+              alt="Pancadas Interescapulares"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
@@ -100,117 +100,107 @@ export default function PageEx4() {
         </div>
       ),
     },
+    {
+      id: 3,
+      title: "Manobra de Heimlich",
+      content: (
+        <div className="row">
+          <div className="col-md-12">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
+              A manobra de Heimlich é uma técnica de primeiros socorros usada para desobstruir as vias aéreas de uma pessoa que está engasgada. Siga os passos abaixo:
+            </p>
     
-      { //Pedir op sobre design
-        id: 3,
-        title: "Manobra de Heimlich",
-        content: (
-          <div className="row">
-            <div className="col-md-12">
-              <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
-                A manobra de Heimlich é uma técnica de primeiros socorros usada para desobstruir as vias aéreas de uma pessoa que está engasgada. Siga os passos abaixo:
-              </p>
-      
-              {/* Passo 1 */}
-              <div className="row mb-4 align-items-center">
-                <div className="col-md-6 text-center">
-                  <img
-                    src="/assets/dva3.png"
-                    alt="Passo 1: Posicionar-se atrás da vítima"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1</h4>
-                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                    Posicione-se atrás da vítima e circunde o abdômen dela com os seus braços.
+            {/* Passo 1 */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/dva3.png"
+                  alt="Passo 1: Posicionar-se atrás da vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1</h4>
+                <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  Posicione-se atrás da vítima e circunde o abdômen dela com os seus braços.
+                </p>
+              </div>
+            </div>
+    
+            {/* Passo 2 */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/dva4.png"
+                  alt="Passo 2: Posição de segurança"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2</h4>
+                <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  Feche o punho de uma mão e posicione-o acima do umbigo da vítima, com o polegar voltado contra o abdômen da vítima. 
+                </p>
+              </div>
+            </div>
+    
+            {/* Passo 3 */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/dva5.png"
+                  alt="Passo 3: Posicionar os pés"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3</h4>
+                <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  Sobreponha o punho da 2ª mão sobre o punho da 1ª mão e aplique uma compressão rápida para dentro e para cima.
+                </p>
+              </div>
+            </div>
+    
+            {/* Passo 4 */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/dva6.png"
+                  alt="Passo 4: Alinhar joelhos"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 4</h4>
+                <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  Mantenha os joelhos alinhados com os pés, sem ultrapassar a linha dos dedos.
+                </p>
+              </div>
+            </div>
+
+            {/* Lembrete */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-12">
+                <div className="alert alert-warning" role="alert" style={{ backgroundColor: "#f39c12", color: "#2c3e50", border: "none", padding: "1.5rem", borderRadius: "8px" }}>
+                  <h5 className="alert-heading" style={{ fontWeight: "bold", fontSize: "1.3rem", marginBottom: "1rem" }}>Lembre-se:</h5>
+                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", marginBottom: "0", color: "#2c3e50" }}>
+                    Repita até 5 vezes este processo. Intercale as pancadas nas costas com as compressões abdominais até a situação resolver-se ou a vítima ficar inconsciente.
                   </p>
                 </div>
               </div>
-      
-              {/* Passo 2 */}
-              <div className="row mb-4 align-items-center">
-                <div className="col-md-6 text-center order-md-2">
-                  <img
-                    src="/assets/dva4.png"
-                    alt="Passo 2: Posição de segurança"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                  />
-                </div>
-                <div className="col-md-6 order-md-1">
-                  <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2</h4>
-                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                    Certifique-se de que você está em uma posição estável e segura, com os pés firmes no chão.
-                  </p>
-                </div>
-              </div>
-      
-              {/* Passo 3 */}
-              <div className="row mb-4 align-items-center">
-                <div className="col-md-6 text-center">
-                  <img
-                    src="/assets/dva5.png"
-                    alt="Passo 3: Posicionar os pés"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3</h4>
-                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                    Deixe os pés firmes no chão, com um pé ligeiramente à frente do outro para manter o equilíbrio.
-                  </p>
-                </div>
-              </div>
-      
-              {/* Passo 4 */}
-              <div className="row mb-4 align-items-center">
-                <div className="col-md-6 text-center order-md-2">
-                  <img
-                    src="/assets/dva6.png"
-                    alt="Passo 4: Alinhar joelhos"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                  />
-                </div>
-                <div className="col-md-6 order-md-1">
-                  <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 4</h4>
-                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                    Mantenha os joelhos alinhados com os pés, sem ultrapassar a linha dos dedos.
-                  </p>
-                </div>
-              </div>
-      
-              {/* Passo 5 
-              <div className="row mb-4 align-items-center">
-                <div className="col-md-6 text-center">
-                  <img
-                    src="/passo5.jpg"
-                    alt="Passo 5: Executar a compressão"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 5</h4>
-                  <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-                    Comprima o abdômen da vítima com movimentos firmes e rápidos para cima, até que o objeto seja expelido.
-                  </p>
-                </div>
-              </div>
-              */}
             </div>
           </div>
-             
-        ),
-      }
+        </div>
+      ),
+    },
   ];
 
   return (
     <div className="exercise-page">
-      {/* Header com design escuro simplificado */}
       <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
