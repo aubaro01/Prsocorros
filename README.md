@@ -8,7 +8,8 @@ Os exercícios para cada utilizador dentro da base de dados está definido como 
 
 <p><strong>Diagrama ER para a base de dados</strong></p>
 
-![image](https://github.com/user-attachments/assets/8f2ae860-8d8d-44a4-87bc-7b86df00ce95)
+![image](https://github.com/user-attachments/assets/89d785b3-3792-419c-a402-b804add35936)
+
 
 
 <h3>Funcionamento</h3><br>
