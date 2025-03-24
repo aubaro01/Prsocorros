@@ -218,9 +218,6 @@ export default function LandingPage() {
     </Button>
   </Modal.Footer>
 </Modal>
-
-
-
     </div>
   );
 }
