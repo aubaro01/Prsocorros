@@ -70,8 +70,8 @@ export default function LandingPage() {
             Talvez um <cite title="Source Title">Sal 4:1</cite>
           </figcaption>
           <Button variant="btn btn-dark" onClick={() => setShowModal(true)}>
-              Ver Instruções Detalhadas
-            </Button>
+            Ver Instruções Detalhadas
+          </Button>
         </section>
 
         {/* Image Section */}
@@ -159,35 +159,68 @@ export default function LandingPage() {
           Todos os direitos reservados.
         </p>
       </footer>
-       <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>Instruções Detalhadas para os Exercícios</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Por favor, leiam com atenção os seguintes pontos:</h4><br />
-          <h5>1. Final dos exercícios</h5>
-          <p>No final de cada exercício, vão deparar-se com esta parte, na qual vão ter um resumo do exercício e um botão que vai abrir um formulário .</p>
-          <img
-            src={FinalP}
-            alt="Instruções detalhadas"
-            className="img-fluid w-100 mt-3"
-          />
-          <h5>2. Formulário</h5>
-          <p>Dentro deste formulário vão ter que colocar o nome, password que definiram no criar resgistro.
-            Também devem preencher o check que têm abaixo.
-          </p>
-          <img
-            src={modal}
-            alt="Instruções detalhadas"
-            className="img-fluid w-100 mt-3"
-          />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            Fechar
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+  <Modal.Header closeButton>
+    <Modal.Title>Instruções Detalhadas para os Exercícios</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <h4>Passos para completar os exercícios:</h4>
+
+    <div className="mb-4">
+      <br />
+      <h5>1. Concluir o Exercício</h5>
+      <p>
+        Quando terminar cada exercício, você verá um resumo com as informações
+        do exercício e um botão. Ao clicar no botão, você abrirá um formulário
+        importante.
+      </p>
+      <img
+        src={FinalP}
+        alt="Exemplo de conclusão do exercício"
+        className="img-fluid w-100 mt-3"
+      />
+    </div>
+
+    <div className="mb-4">
+      <br />
+      <h5>2. Preencher o Formulário</h5>
+      <p>
+        No formulário, insira seu nome e a senha que você criou. Não se
+        esqueça de marcar a caixa de verificação abaixo para confirmar que
+        completou o exercício.
+      </p>
+      <img
+        src={modal}
+        alt="Exemplo de formulário"
+        className="img-fluid w-100 mt-3"
+      />
+    </div>
+
+    <div className="mb-4">
+      <h5>3. Finalizar</h5>
+      <p>
+        Após preencher o formulário, clique em "Enviar" para concluir sua
+        participação. Isso confirma que você completou todas as etapas.
+      </p>
+    </div>
+
+    <div className="mt-3">
+      <p>
+        Se tiver dúvidas, consulte as <strong>Perguntas Frequentes</strong> ou
+        entre em contato com nossa equipe de suporte.
+      </p>
+    </div>
+  </Modal.Body>
+
+  <Modal.Footer>
+    <Button variant="secondary" onClick={() => setShowModal(false)}>
+      Fechar
+    </Button>
+  </Modal.Footer>
+</Modal>
+
+
+
     </div>
   );
 }
