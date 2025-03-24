@@ -1,4 +1,3 @@
-
 const express = require('express');
 const userRoutes = require('./routes/UserRote');
 const exerRoutes = require('./routes/ExerRote');
@@ -8,9 +7,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api', userRoutes);
-app.use('/api', exerRoutes);
-app.use('/api', userExercRoutes);
+// Definindo rotas específicas para cada módulo
+app.use('/api/users', userRoutes);
+app.use('/api/exercises', exerRoutes);
+app.use('/api/user-exercises', userExercRoutes);
 
 // Rota simples de teste
 app.get('/api/hello', (req, res) => {
@@ -21,8 +21,5 @@ app.get('/api/hello', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
-
+// Removendo `app.listen()` porque a Vercel já gerencia isso
+module.exports = app;
