@@ -1,6 +1,8 @@
-const app = require(`./app`);
-const PORT = process.env.PORT || 5000;
+const express = require('express');
+const app = express();
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-})
+app.get('/', (req, res) => {
+    res.send('Meu backend na Vercel!');
+});
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
