@@ -1,10 +1,3 @@
-const express = require('express');
-const app = require('app');
-
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Meu backend na Vercel!');
-});
+const app = require('./app'); // Importando corretamente o app.js
 
 module.exports = app;
