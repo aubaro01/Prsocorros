@@ -34,47 +34,27 @@ export default function PageEx4() {
   // Array com as etapas do exercício
   const steps = [
     {
-      id: 1,
+      id: 0,
       title: "Vídeo Demonstrativo",
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
             <iframe
-              src="https://www.youtube.com/embed/CMKw77fbkOs"
+              src="--"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Este vídeo demonstra a técnica correta para realizar o agachamento com salto.
+            Este vídeo demonstra a técnica correta para realizar o exercício.
             Observe atentamente os movimentos antes de começar a praticar.
           </p>
         </>
       ),
     },
     {
-      id: 2,
-      title: "Posição Inicial",
-      content: (
-        <>
-          <div className="text-center mb-4">
-            <img
-              src="/imag.jpg"
-              alt="Posição Inicial"
-              className="img-fluid rounded"
-              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
-            />
-          </div>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Fique em pé com os pés afastados na largura dos ombros e braços relaxados ao lado do corpo.
-            Esta posição é a base para um bom agachamento e proporciona estabilidade durante o exercício.
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 3,
-      title: "Agachamento",
+      id: 1,
+      title: "Condições de Segurança",
       content: (
         <div className="row">
           <div className="col-md-6">
@@ -90,8 +70,8 @@ export default function PageEx4() {
           </div>
           <div className="col-md-6 text-center">
             <img
-              src="/imag.jpg"
-              alt="Agachamento"
+              src="/assets/pls1.png"
+              alt="Ver se tem condições para socorrer"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
@@ -100,55 +80,175 @@ export default function PageEx4() {
       ),
     },
     {
-      id: 4,
-      title: "Salto",
+      id: 2,
+      title: "Avaliar Consciência",
       content: (
         <div className="row">
-          <div className="col-md-6 text-center mb-4 mb-md-0">
+          <div className="col-md-12">
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
+              Para o transporte de uma vítima inconsciente, há vários cuidados a serem tomados. Siga os passos abaixo:
+            </p>
+    
+            {/* Passo 1 - Avaliar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/pls2.png"
+                  alt="Passo 1: Avaliar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 1 - Avaliar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Verifique se a vítima está usando algo que possa colocá-la em perigo (ex.: objetos pontiagudos, acessórios).</li>
+                  <li className="mb-2">Certifique-se de que o ambiente é seguro para realizar o transporte.</li>
+                  <li>Verifique se há riscos adicionais, como tráfego de veículos ou incêndio.</li>
+                </ul>
+              </div>
+            </div>
+    
+            {/* Passo 2 - Posicionar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/pls3.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+    
+            {/* Passo 3 - Transportar */}
+            <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/pls4.png"
+                  alt="Passo 3: Transportar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 2 - Posicionar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/pls5.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 3 - Transportar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center">
+                <img
+                  src="/assets/pls6.png"
+                  alt="Passo 3: Transportar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 3 - Transportar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Use técnicas adequadas para levantar a vítima, como o método de arrastamento ou a técnica de dois socorristas.</li>
+                  <li className="mb-2">Mantenha a vítima estável durante o transporte, evitando movimentos desnecessários.</li>
+                  <li>Leve a vítima para um local seguro ou aguarde a chegada de socorro profissional.</li>
+                </ul>
+              </div>
+            </div>
+             {/* Passo 2 - Posicionar */}
+             <div className="row mb-4 align-items-center">
+              <div className="col-md-6 text-center order-md-2">
+                <img
+                  src="/assets/pls7.png"
+                  alt="Passo 2: Posicionar a vítima"
+                  className="img-fluid rounded"
+                  style={{ maxHeight: "250px", border: "3px solid #f39c12" }}
+                />
+              </div>
+              <div className="col-md-6 order-md-1">
+                <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Passo 2 - Posicionar</h4>
+                <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+                  <li className="mb-2">Coloque a vítima em uma posição estável, de preferência deitada de costas.</li>
+                  <li className="mb-2">Certifique-se de que a cabeça, o pescoço e a coluna estão alinhados.</li>
+                  <li>Evite movimentos bruscos que possam agravar lesões.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 3,
+      title: "Posição Inicial",
+      content: (
+        <>
+          <div className="text-center mb-4">
             <img
-              src="/imag.jpg"
-              alt="Salto"
+              src="/assets/pls1.png"
+              alt="Posição Inicial"
               className="img-fluid rounded"
               style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
             />
           </div>
-          <div className="col-md-6">
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              A partir da posição de agachamento, <strong>impulsione o corpo para cima</strong> em um salto explosivo,
-              estendendo completamente os joelhos e quadris.
-            </p>
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Use os braços para ajudar no impulso, movendo-os para frente e para cima.
-            </p>
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Aterrisse suavemente, voltando para a posição de agachamento, amortecendo o impacto.
-            </p>
-          </div>
-        </div>
+          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
+            Fique em pé com os pés afastados na largura dos ombros e braços relaxados ao lado do corpo.
+            Esta posição é a base para um bom agachamento e proporciona estabilidade durante o exercício.
+          </p>
+        </>
       ),
     },
   ];
 
   return (
     <div className="exercise-page">
-      {/* Header com design escuro simplificado */}
       <header className="py-4" style={{ backgroundColor: "#2c3e50", color: "#fff" }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <h1 className="m-0" style={{ fontSize: "1.8rem", fontWeight: "700" }}>SAV</h1>
             <div className="py-1 px-3" style={{ border: "1px solid rgba(31, 26, 26, 0.3)", borderRadius: "4px" }}>
-              Exercício 4
+              Exercício 3
             </div>
           </div>
           <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
-            Remoção de Vítima no Auditório<br></br>
-            - Consciente + Insconsciente
+          POSIÇÃO LATERAL DE SEGURANÇA (PLS)<br />
           </p>
         </div>
       </header>
 
       <main className="container py-5">
-        {/* Título do exercício com design escuro simplificado */}
         <div className="text-center mb-5">
           <h2
             style={{
@@ -158,18 +258,17 @@ export default function PageEx4() {
               marginBottom: "1rem",
             }}
           >
-            Agachamento com Salto
+            Posição Lateral de Segurança
           </h2>
           <div
             className="mx-auto"
             style={{ width: "50px", height: "3px", backgroundColor: "#f39c12", marginBottom: "1.5rem" }}
           ></div>
           <p style={{ fontSize: "1.2rem", color: "black" }}>
-            Aprenda a técnica correta do agachamento com salto para aprimorar sua força e potência
+
           </p>
         </div>
 
-        {/* Todas as etapas são mostradas em sequência com o mesmo estilo escuro */}
         <div className="row">
           <div className="col-lg-10 mx-auto">
             {steps.map((step) => (
@@ -213,7 +312,6 @@ export default function PageEx4() {
               </section>
             ))}
 
-            {/* Seção combinada de Resumo e Conclusão */}
             <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
               <h4
                 style={{
@@ -224,7 +322,7 @@ export default function PageEx4() {
                   color: "#ecf0f1",
                 }}
               >
-                Resumo e Conclusão do Exercício
+                Resumo do Exercício
               </h4>
               <div className="row">
                 <div className="col-md-6">
@@ -329,9 +427,9 @@ export default function PageEx4() {
                   textAlign: "center",
                 }}
               >
-                Parabéns! Você completou todas as etapas do exercício de Agachamento com Salto.
-                Este exercício é excelente para fortalecer as pernas e melhorar a explosão muscular.
-              </p>
+                <br />
+                <strong>Conclusão do exercício</strong>
+                </p>
               <div className="text-center">
                 <Button
                   onClick={() => setShowModal(true)}
@@ -356,92 +454,70 @@ export default function PageEx4() {
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
-            © {new Date().getFullYear()} SAV. Todos os direitos reservados.
+            © {new Date().getFullYear()} SAV. <br />Todos os direitos reservados.
           </p>
         </div>
       </footer>
 
       {/* Modal de Registro */}
-      <Modal show={showModal} onHide={handleModalClose} centered>
-        <Modal.Header closeButton style={{ border: "none" }}>
-          <Modal.Title style={{ fontSize: "1.5rem", fontWeight: "600" }}>
-            Registrar Exercício
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {!submitted ? (
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formNome">
-                <Form.Label>Nome Completo</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="nome"
-                  value={formData.nome}
-                  onChange={handleChange}
-                  placeholder="Digite seu nome completo"
-                  required
-                  style={{ fontSize: "1rem", padding: "0.75rem" }}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formCircuito">
-                <Form.Label>Número do Circuito</Form.Label>
-                <Form.Control
-                  type="number"
-                  name="circuito"
-                  value={formData.circuito}
-                  onChange={handleChange}
-                  placeholder="Digite o número do circuito"
-                  min="1"
-                  required
-                  style={{ fontSize: "1rem", padding: "0.75rem" }}
-                />
-              </Form.Group>
-              <Form.Group className="mb-4" controlId="formConcluido">
-                <Form.Check
-                  type="checkbox"
-                  name="concluido"
-                  checked={formData.concluido}
-                  onChange={handleChange}
-                  label="Exercício concluído"
-                />
-              </Form.Group>
-              <Button
-                type="submit"
-                style={{
-                  backgroundColor: "#03a87c",
-                  border: "none",
-                  width: "100%",
-                  padding: "0.75rem",
-                  fontSize: "1rem",
-                }}
-              >
-                Enviar
-              </Button>
-            </Form>
-          ) : (
-            <div className="text-center py-3">
-              <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✓</div>
-              <h4 style={{ fontSize: "1.5rem", fontWeight: "600", marginBottom: "1rem" }}>
-                Registro Concluído!
-              </h4>
-              <p className="mb-4" style={{ fontSize: "1.1rem", color: "#292929" }}>
-                Seu exercício foi registrado com sucesso.
-              </p>
-              <Button
-                onClick={handleModalClose}
-                style={{
-                  backgroundColor: "#03a87c",
-                  border: "none",
-                  padding: "0.75rem 2rem",
-                  fontSize: "1rem",
-                }}
-              >
-                Fechar
-              </Button>
-            </div>
-          )}
-        </Modal.Body>
-      </Modal>
-    </div>
-  );
-}
+                 <Modal show={showModal} onHide={handleModalClose} centered>
+                   <Modal.Header closeButton className="border-0">
+                     <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
+                   </Modal.Header>
+                   <Modal.Body className="p-4">
+                     {!submitted ? (
+                       <Form onSubmit={handleSubmit}>
+                         <Form.Group className="mb-3" controlId="formNome">
+                           <Form.Label className="fw-semibold">Nome Completo</Form.Label>
+                           <Form.Control
+                             type="text"
+                             name="nome"
+                             value={formData.nome}
+                             onChange={handleChange}
+                             placeholder="Digite seu nome completo"
+                             required
+                             className="p-2"
+                           />
+                         </Form.Group>
+                         <Form.Group className="mb-3" controlId="formPass">
+                           <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
+                           <Form.Control
+                             type="password"
+                             name="pass"
+                             value={formData.pass}
+                             onChange={handleChange}
+                             placeholder="Digite seu código de acesso"
+                             required
+                             className="p-2"
+                           />
+                         </Form.Group>
+                         <Form.Group className="mb-3" controlId="formConcluido">
+                           <Form.Check
+                             type="checkbox"
+                             name="concluido"
+                             checked={formData.concluido}
+                             onChange={handleChange}
+                             label="Exercício concluído"
+                             className="fw-semibold"
+                           />
+                         </Form.Group>
+                         <div className="text-center">
+                           <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
+                             Enviar
+                           </Button>
+                         </div>
+                       </Form>
+                     ) : (
+                       <div className="text-center">
+                         <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
+                         <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
+                           Fechar
+                         </Button>
+                       </div>
+                     )}
+                   </Modal.Body>
+                 </Modal>
+               </div>
+             );
+           }
+      
