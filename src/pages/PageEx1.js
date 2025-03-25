@@ -234,7 +234,7 @@ export default function PageEx4() {
           
           <div className="col-lg-6 order-lg-2 order-1 text-center">
             <img
-              src="/assets/EmerNumber.png"
+              src="/assets/emerNumber.png"
               alt="Procedimento para vítima inconsciente"
               className="img-fluid rounded shadow"
               style={{ 
