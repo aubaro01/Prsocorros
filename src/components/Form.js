@@ -115,22 +115,16 @@ const FormInstructionsModal = ({ show, onHide }) => {
   );
 };
 
-// Componente de formulário principal
 const Form = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div>
-      {/* Botão para abrir o modal (opcional) */}
       <button onClick={() => setShowModal(true)}>Mostrar Instruções</button>
-      
-      {/* Modal de instruções */}
       <FormInstructionsModal 
         show={showModal} 
         onHide={() => setShowModal(false)} 
-      />
-      
-      {/* Seu formulário principal viria aqui */}
+      />   
     </div>
   );
 };
