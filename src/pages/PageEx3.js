@@ -31,7 +31,6 @@ export default function PageEx4() {
     setFormData({ nome: "", circuito: "", concluido: false });
   };
 
-  // Array com as etapas do exercício
   const steps = [
     {
       id: 0,
@@ -450,7 +449,7 @@ export default function PageEx4() {
         </div>
       </main>
 
-      {/* Footer simples estilo Medium */}
+      {/* Footer */}
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>

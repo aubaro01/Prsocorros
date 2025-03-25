@@ -31,7 +31,7 @@ export default function PageEx4() {
     setFormData({ nome: "", pass: "", concluido: false });
   };
 
-  // Array com as etapas do exercício
+  
   const steps = [
     {
       id: 0,
@@ -65,7 +65,7 @@ export default function PageEx4() {
           </div>
           <div className="col-md-6">
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Avalie a situação da vítima, incentive-a a colaborar e auxilie no transporte utilizando uma cadeira de rodas, caso necessário.
+              Avaliar, incentivar e auxiliar no transporte com cadeira de rodas.
             </p>
             <ul style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
               <li className="mb-2">Levante a vítima com segurança.</li>
@@ -396,7 +396,7 @@ export default function PageEx4() {
         </div>
       </main>
 
-      {/* Footer simples estilo Medium */}
+      {/* Footer  */}
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
@@ -466,59 +466,3 @@ export default function PageEx4() {
     </div>
   );
 }
-/*
-
-textos para usar
-
-Texto 1: Vídeo Instrutivo
-Antes: "Assista ao vídeo abaixo para aprender a técnica correta para a execução do exercício. Preste atenção nos movimentos antes de começar a prática."
-
-Melhorado: "Assista ao vídeo abaixo para entender a técnica correta de execução do exercício. Preste atenção aos detalhes dos movimentos antes de começar a prática."
-
-Texto 2: Vítima Consciente
-Antes: "Avalie a situação da vítima, incentive-a a cooperar e ajude no transporte utilizando uma cadeira de rodas, conforme a necessidade."
-
-Melhorado: "Avalie a situação da vítima, incentive-a a colaborar e auxilie no transporte utilizando uma cadeira de rodas, caso necessário."
-
-Antes: "Com a ajuda de outros voluntários, siga os passos abaixo:
-
-Levante a vítima com segurança.
-Posicione a vítima adequadamente na cadeira de rodas.
-Certifique-se de que ela está segura na cadeira."
-Melhorado: "Com o auxílio de outros voluntários, siga as etapas abaixo:
-
-Levante a vítima com segurança.
-Coloque-a na cadeira de rodas de forma adequada.
-Verifique se ela está segura na cadeira antes de iniciar o transporte."
-Texto 3: Vítima Inconsciente
-Antes: "Para o transporte de uma vítima inconsciente, siga os cuidados abaixo:
-
-Passo 1 - Avaliar Verifique se a vítima não está com objetos que possam representer perigo (ex.: objetos pontiagudos, acessórios perigosos). Certifique-se de que o ambiente está seguro para realizar o transporte. Observe riscos adicionais, como tráfego de veículos ou incêndios próximos."
-
-Melhorado: "Para o transporte de uma vítima inconsciente, siga os cuidados descritos abaixo:
-
-Passo 1 - Avaliação:
-
-Verifique se a vítima está com objetos que possam representar riscos (ex.: objetos pontiagudos ou acessórios perigosos).
-Certifique-se de que o ambiente está seguro para realizar o transporte.
-Observe riscos adicionais, como tráfego de veículos ou incêndios próximos."
-Antes: "Passo 2 - Posicionar Coloque a vítima em uma posição estável, de preferência deitada de costas. Alinhe a cabeça, pescoço e coluna da vítima para evitar lesões adicionais. Evite movimentos bruscos durante o manuseio para prevenir complicações."
-
-Melhorado: "Passo 2 - Posicionamento:
-
-Coloque a vítima em uma posição estável, de preferência deitada de costas.
-Alinhe a cabeça, o pescoço e a coluna da vítima para evitar lesões adicionais.
-Evite movimentos bruscos durante o manuseio para prevenir complicações."
-Antes: "Passo 3 - Transportar Utilize técnicas apropriadas para levantar a vítima, como o arrastamento ou a técnica de dois socorristas. Mantenha a vítima estável durante o transporte, evitando movimentos excessivos. Leve a vítima para um local seguro ou aguarde a chegada de profissionais de socorro."
-
-Melhorado: "Passo 3 - Transporte:
-
-Utilize técnicas apropriadas para levantar a vítima, como o arrastamento ou a técnica de dois socorristas.
-Mantenha a vítima estável durante o transporte, evitando movimentos excessivos.
-Transporte a vítima até um local seguro ou aguarde a chegada de profissionais de socorro."
-Texto 4: Transporte de Vítima Inconsciente
-Antes: "A partir da posição de agachamento, impulsione o corpo para cima com um salto explosivo, estendendo completamente os joelhos e quadris. Use os braços para ajudar no impulso, movendo-os para frente e para cima. Aterrisse suavemente, retornando à posição de agachamento para amortecer o impacto."
-
-Melhorado: "A partir da posição de agachamento, impulsione o corpo para cima com um salto explosivo, estendendo completamente os joelhos e os quadris. Use os braços para auxiliar no impulso, movendo-os para frente e para cima. Aterrisse suavemente e retorne à posição de agachamento para amortecer o impacto.
-
- */

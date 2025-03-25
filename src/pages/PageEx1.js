@@ -44,8 +44,8 @@ export default function PageEx4() {
               allowFullScreen
             ></iframe>
           </div>
-          <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-            Este vídeo demonstra a técnica correta para realizar o exercício.
+          <p style={{ fontSize: "1.1rem", alignItems:"flex-end", lineHeight: "1.7", color: "#e9ecef" }}>
+            Este vídeo demonstra a técnica correta para realizar o exercício.<br />
             Observe atentamente os movimentos antes de começar a praticar.
           </p>
         </>
@@ -201,26 +201,53 @@ export default function PageEx4() {
       id: 4,
       title: "Em caso de vítima inconsciente",
       content: (
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
-              Se a vítima ficar inconsciente:<br />
-               - Ligar para o 112<br />
-               - Iniciar o suporte básico de vida
-            </p>
+        <div className="row align-items-center g-4">
+          <div className="col-lg-6 order-lg-1 order-2">
+            <div className="emergency-steps p-3 p-md-4 rounded-3" style={{ 
+              backgroundColor: 'rgba(30, 30, 30, 0.8)', // Fundo mais escuro
+              borderLeft: '4px solid #f39c12'
+            }}>
+              <h3 className="text-warning mb-3 fw-bold">Procedimento:</h3>
+              <ul className="step-list ps-3" style={{ 
+                fontSize: "1.15rem", 
+                lineHeight: "1.8",
+                color: '#ffffff' 
+              }}>
+                <li className="mb-2 d-flex align-items-start">
+                  <span className="badge bg-warning text-dark me-2 mt-1">1</span>
+                  <span>Ligue imediatamente para o <strong className="text-warning">112</strong></span> 
+                </li>
+                <li className="d-flex align-items-start">
+                  <span className="badge bg-warning text-dark me-2 mt-1">2</span>
+                  <span>Inicie o <strong>suporte básico de vida.</strong></span> 
+                </li>
+                <li className="d-flex align-items-start">
+                  <span className="badge bg-warning text-dark me-2 mt-1">3</span>
+                  <span>Siga sempre as instruções das autoridades </span> 
+                </li>
+              </ul>
+              <div className="mt-4 alert alert-warning border-warning">
+                <i className="bi bi-exclamation-triangle-fill me-2"></i>
+                <span style={{ color: '#000000' }}>Não mova a vítima sem necessidade!</span>  
+              </div>
+            </div>
           </div>
-          <div className="col-md-6 text-center">
+          
+          <div className="col-lg-6 order-lg-2 order-1 text-center">
             <img
-              src="/assets/dva7.png"
-              alt="Em caso de Desmaio"
-              className="img-fluid rounded"
-              style={{ maxHeight: "350px", border: "3px solid #f39c12" }}
+              src="/assets/EmerNumber.png"
+              alt="Procedimento para vítima inconsciente"
+              className="img-fluid rounded shadow"
+              style={{ 
+                maxHeight: '320px',
+                border: '3px solid #f39c12',
+                boxShadow: '0 4px 12px rgba(243, 156, 18, 0.3)'
+              }}
             />
           </div>
         </div>
-      ),
-
-    },
+      )
+    }
   ];
 
   return (
@@ -240,7 +267,6 @@ export default function PageEx4() {
       </header>
 
       <main className="container py-5">
-        {/* Título do exercício com design escuro simplificado */}
         <div className="text-center mb-5">
           <h2
             style={{
@@ -261,7 +287,6 @@ export default function PageEx4() {
           </p>
         </div>
 
-        {/* Todas as etapas são mostradas em sequência com o mesmo estilo escuro */}
         <div className="row">
           <div className="col-lg-10 mx-auto">
             {steps.map((step) => (
@@ -305,7 +330,7 @@ export default function PageEx4() {
               </section>
             ))}
 
-            {/* Seção combinada de Resumo e Conclusão */}
+            {/* Seção de Resumo e Conclusão */}
             <section className="p-4 mb-5 rounded" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)" }}>
               <h4
                 style={{
@@ -443,7 +468,7 @@ export default function PageEx4() {
         </div>
       </main>
 
-      {/* Footer simples estilo Medium */}
+      {/* Footer */}
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
