@@ -13,6 +13,3 @@ db.once('open', () => {
 });
 
 module.exports = mongoose;
-
-// Dar este run em casa
-// npm install mongoose dotenv

@@ -87,7 +87,7 @@ export default function PageEx4() {
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
               Para o transporte de uma vítima inconsciente, há vários cuidados a serem tomados. Siga os passos abaixo:
             </p>
-    
+
             {/* Passo 1 - Avaliar */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -107,7 +107,7 @@ export default function PageEx4() {
                 </ul>
               </div>
             </div>
-    
+
             {/* Passo 2 - Posicionar */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center order-md-2">
@@ -127,7 +127,7 @@ export default function PageEx4() {
                 </ul>
               </div>
             </div>
-    
+
             {/* Passo 3 - Transportar */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
@@ -167,8 +167,8 @@ export default function PageEx4() {
               </div>
             </div>
 
-             {/* Passo 3 - Transportar */}
-             <div className="row mb-4 align-items-center">
+            {/* Passo 3 - Transportar */}
+            <div className="row mb-4 align-items-center">
               <div className="col-md-6 text-center">
                 <img
                   src="/assets/sbv6.png"
@@ -221,7 +221,7 @@ export default function PageEx4() {
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
               Assista aos vídeos adicionais para complementar seu treinamento e aprofundar seu conhecimento sobre técnicas de transporte.
             </p>
-            
+
             {/* Primeiro vídeo adicional */}
             <div className="mb-5">
               <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Técnicas Avançadas de Transporte</h4>
@@ -251,7 +251,7 @@ export default function PageEx4() {
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
               Para garantir a segurança e eficácia durante o transporte de vítimas, observe as seguintes orientações complementares:
             </p>
-            
+
             {/* Orientações em formato de cards */}
             <div className="row mb-4">
               {/* Card 1 */}
@@ -268,7 +268,7 @@ export default function PageEx4() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="col-md-4 mb-4">
                 <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}>
                   <div className="card-body text-center">
@@ -282,7 +282,7 @@ export default function PageEx4() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="col-md-4 mb-4">
                 <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}>
                   <div className="card-body text-center">
@@ -297,24 +297,24 @@ export default function PageEx4() {
                 </div>
               </div>
               <div className="col-md-4 offset-md-4 mb-4 d-flex justify-content-centerr">
-            <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", width: "100%" }}>
-              <div className="card-body text-center">
-                <img src="/assets/tm3.png" alt="Cuidados Especiais" className="img-fluid mb-3" style={{ borderRadius: "8px" }} />
-                <h5 className="card-title mb-3" style={{ color: "#f39c12" }}>Cuidados Especiais</h5>
-                <ul style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef", paddingLeft: "1.2rem", textAlign: "left" }}>
-                  <li className="mb-2">Monitore os sinais vitais durante o transporte</li>
-                  <li className="mb-2">Verifique se a vítima está confortável e segura</li>
-                  <li>Evite movimentos bruscos em caso de suspeita de lesão na coluna</li>
-                </ul>
+                <div className="card h-100" style={{ backgroundColor: "#2c3e50", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", width: "100%" }}>
+                  <div className="card-body text-center">
+                    <img src="/assets/tm3.png" alt="Cuidados Especiais" className="img-fluid mb-3" style={{ borderRadius: "8px" }} />
+                    <h5 className="card-title mb-3" style={{ color: "#f39c12" }}>Cuidados Especiais</h5>
+                    <ul style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef", paddingLeft: "1.2rem", textAlign: "left" }}>
+                      <li className="mb-2">Monitore os sinais vitais durante o transporte</li>
+                      <li className="mb-2">Verifique se a vítima está confortável e segura</li>
+                      <li>Evite movimentos bruscos em caso de suspeita de lesão na coluna</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
             </div>
           </div>
         </div>
       ),
     },
-  ] 
+  ]
 
   return (
     <div className="exercise-page">
@@ -327,9 +327,9 @@ export default function PageEx4() {
             </div>
           </div>
           <p className="mt-2 mb-0" style={{ fontSize: "1.1rem", color: "#ecf0f1" }}>
-          Suporte Básico de vida (SBV)<br />
-                 <span>- Transporte de Vítima em Maca</span>
-                 </p>
+            Suporte Básico de vida (SBV)<br />
+            <span>- Transporte de Vítima em Maca</span>
+          </p>
         </div>
       </header>
 
@@ -344,7 +344,7 @@ export default function PageEx4() {
             }}
           >
             Suporte Básico de vida<br />
-                     + <br />
+            + <br />
             Transporte de Vítima em Maca
           </h2>
           <div
@@ -559,7 +559,7 @@ export default function PageEx4() {
                 }}
               >
                 <strong>Conclusão do exercício</strong>
-                </p>
+              </p>
               <div className="text-center">
                 <Button
                   onClick={() => setShowModal(true)}
@@ -580,7 +580,7 @@ export default function PageEx4() {
         </div>
       </main>
 
-      {/* Footer simples estilo Medium */}
+      {/* Footer */}
       <footer className="border-top py-4" style={{ backgroundColor: "#F9F9F9" }}>
         <div className="container text-center">
           <p style={{ fontSize: "0.9rem", color: "#757575" }}>
@@ -590,63 +590,63 @@ export default function PageEx4() {
       </footer>
 
       {/* Modal de Registro */}
-                 <Modal show={showModal} onHide={handleModalClose} centered>
-                   <Modal.Header closeButton className="border-0">
-                     <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
-                   </Modal.Header>
-                   <Modal.Body className="p-4">
-                     {!submitted ? (
-                       <Form onSubmit={handleSubmit}>
-                         <Form.Group className="mb-3" controlId="formNome">
-                           <Form.Label className="fw-semibold">Nome Completo</Form.Label>
-                           <Form.Control
-                             type="text"
-                             name="nome"
-                             value={formData.nome}
-                             onChange={handleChange}
-                             placeholder="Digite seu nome completo"
-                             required
-                             className="p-2"
-                           />
-                         </Form.Group>
-                         <Form.Group className="mb-3" controlId="formPass">
-                           <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
-                           <Form.Control
-                             type="password"
-                             name="pass"
-                             value={formData.pass}
-                             onChange={handleChange}
-                             placeholder="Digite seu código de acesso"
-                             required
-                             className="p-2"
-                           />
-                         </Form.Group>
-                         <Form.Group className="mb-3" controlId="formConcluido">
-                           <Form.Check
-                             type="checkbox"
-                             name="concluido"
-                             checked={formData.concluido}
-                             onChange={handleChange}
-                             label="Exercício concluído"
-                             className="fw-semibold"
-                           />
-                         </Form.Group>
-                         <div className="text-center">
-                           <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
-                             Enviar
-                           </Button>
-                         </div>
-                       </Form>
-                     ) : (
-                       <div className="text-center">
-                         <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
-                         <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
-                           Fechar
-                         </Button>
-                       </div>
-                     )}
-                   </Modal.Body>
-                 </Modal>
-               </div>
-             );
-           }
+      <Modal show={showModal} onHide={handleModalClose} centered>
+        <Modal.Header closeButton className="border-0">
+          <Modal.Title className="fw-bold text-dark">Registrar Exercício</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="p-4">
+          {!submitted ? (
+            <Form onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formNome">
+                <Form.Label className="fw-semibold">Nome Completo</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="nome"
+                  value={formData.nome}
+                  onChange={handleChange}
+                  placeholder="Digite seu nome completo"
+                  required
+                  className="p-2"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formPass">
+                <Form.Label className="fw-semibold">Código de Acesso</Form.Label>
+                <Form.Control
+                  type="password"
+                  name="pass"
+                  value={formData.pass}
+                  onChange={handleChange}
+                  placeholder="Digite seu código de acesso"
+                  required
+                  className="p-2"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formConcluido">
+                <Form.Check
+                  type="checkbox"
+                  name="concluido"
+                  checked={formData.concluido}
+                  onChange={handleChange}
+                  label="Exercício concluído"
+                  className="fw-semibold"
+                />
+              </Form.Group>
+              <div className="text-center">
+                <Button type="submit" className="btn btn-success fw-bold px-4 py-2">
+                  Enviar
+                </Button>
+              </div>
+            </Form>
+          ) : (
+            <div className="text-center">
+              <h5 className="text-success fw-bold">Registro concluído com sucesso!</h5>
+              <Button onClick={handleModalClose} className="btn btn-secondary mt-3 px-4">
+                Fechar
+              </Button>
+            </div>
+          )}
+        </Modal.Body>
+      </Modal>
+    </div>
+  );
+}
