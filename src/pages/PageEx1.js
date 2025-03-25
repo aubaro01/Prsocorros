@@ -181,7 +181,6 @@ export default function PageEx4() {
                 </p>
               </div>
             </div>
-
             {/* Lembrete */}
             <div className="row mb-4 align-items-center">
               <div className="col-md-12">
