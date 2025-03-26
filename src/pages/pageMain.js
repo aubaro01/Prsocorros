@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button } from 'react-bootstrap'; // Importando os componentes Modal e Button do Bootstrap
 
-const imageUrl = "/assets/sav1.jpg";
+const imageUrl = "/assets/mapa.jpg";
 const FinalP = "/assets/form.png";
 const modal = "/assets/form1.png";
 
@@ -74,7 +74,7 @@ export default function LandingPage() {
           </Button>
         </section>
 
-        {/* Image Section */}
+       
         <section className="bg-light py-5">
           <div className="container text-center">
             <img
@@ -84,9 +84,11 @@ export default function LandingPage() {
             />
             <p className="text-muted mt-3">
               Mapa dos pontos de exercícios<br />
-              Sector A: <strong>Exercícios 1 & 2,</strong> perto dos perdidos e achados  <br />
-              Sector B: <strong>Exercícios 3,</strong> perto das casas de banho<br />
-              Sector C: <strong>Exercícios 4,</strong> entrada do auditório<br />
+              Sector à Azul: <strong>Exercícios 1 & 2,</strong> perto das casas de banho  <br />
+              Sector à Verde: <strong>Exercícios 3,</strong> dentro do auditório<br />
+              Sector à Amarelo: <strong>Exercícios 4,</strong> entrada do auditório<br />
+              Sector à Vermelho: <strong>Exercícios 5,</strong> perto dos perdidos e achados<br />
+
             </p>
           </div>
         </section>
