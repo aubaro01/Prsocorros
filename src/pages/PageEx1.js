@@ -36,14 +36,12 @@ export default function CombinedPage() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <video
-              controls
-              controlsList="nodownload" // Oculta o botão de download
-              onContextMenu={(e) => e.preventDefault()} // Bloqueia clique direito
-            >
-              <source src="/assets/mp4/dva.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeos HTML5.
-            </video>
+          <iframe
+              src="https://drive.google.com/file/d/13qk7SmcpZ7w8CcaaSQ-RUHl3y2P86i7L/preview"
+              title="Vídeo demonstrativo do exercício"
+              allowFullScreen
+              allow="autoplay"
+            ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Este vídeo demonstra a técnica correta para realizar o exercício.
@@ -346,14 +344,12 @@ export default function CombinedPage() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-          <video
-              controls
-              controlsList="nodownload"
-              onContextMenu={(e) => e.preventDefault()} 
-            >
-              <source src="/assets/mp4/Pls.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeos HTML5.
-            </video>
+          <iframe
+              src="https://drive.google.com/file/d/1nVGa1CQbQj3lnEj7ry9G8F4WQpQucHVd/preview"
+              title="Vídeo demonstrativo do exercício"
+              allowFullScreen
+              allow="autoplay"
+            ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Este vídeo demonstra a técnica correta para realizar o exercício.

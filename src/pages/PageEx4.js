@@ -39,14 +39,13 @@ export default function PageSBV() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <video
-              controls
-              controlsList="nodownload" // Oculta o botão de download
-              onContextMenu={(e) => e.preventDefault()} // Bloqueia clique direito
-            >
-              <source src="/assets/mp4/sbv.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeos HTML5.
-            </video>
+          <iframe
+              src="https://drive.google.com/file/d/1Zgxj_U9-lCpL6SPoaAr-Uqs8jv1rVVtX/preview"
+              title="Vídeo demonstrativo do exercício"
+              allowFullScreen
+              allow="autoplay"
+             
+            ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Assista ao vídeo para conhecer a técnica correta.
