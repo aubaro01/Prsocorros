@@ -339,7 +339,7 @@ export default function CombinedPage() {
   const stepsPLS = [
     {
       id: 0,
-      title: "Vídeo Demonstrativo",
+      title: "Vídeo introdutório",
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
