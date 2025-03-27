@@ -44,7 +44,7 @@ export default function PageEx4() {
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
               allow="autoplay"
-             
+
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
@@ -59,9 +59,9 @@ export default function PageEx4() {
       content: (
         <div className="row">
           <div className="col-md-12">
-            
+
             {/* Passo 1 */}
-            <div className="step-card mb-4 p-3 rounded" style={{  borderLeft: "4px solid #f39c12" }}>              <div className="row align-items-center">
+            <div className="step-card mb-4 p-3 rounded" style={{ borderLeft: "4px solid #f39c12" }}>              <div className="row align-items-center">
               <div className="col-md-6 text-center">
                 <img
                   src="/assets/tm.png"
@@ -88,7 +88,7 @@ export default function PageEx4() {
                   </div>
                   <h4 style={{ color: "#f39c12", margin: 0 }}>Fixar a cabeça da vítima</h4>
                 </div>
-                <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                   <li className="mb-2 d-flex">
                     <span className="me-2">•</span>
                     <span>Verificar objetos que possam representar riscos (objetos pontiagudos, acessórios perigosos)</span>
@@ -107,7 +107,7 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 2 */}
-            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)",  borderLeft: "4px solid #f39c12" }}>              <div className="row align-items-center">
+            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)", borderLeft: "4px solid #f39c12" }}>              <div className="row align-items-center">
 
               <div className="col-md-6 order-md-2 text-center">
                 <img
@@ -182,7 +182,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Posicionamento dos 3 socorristas</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Socorrista 1: Responsável pela cabeça (comando)</span>
@@ -201,7 +201,7 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 4 */}
-            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)",  borderLeft: "4px solid #f39c12" }}>
+            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
                 <div className="col-md-6 order-md-2 text-center">
                   <img
@@ -229,7 +229,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Levantamento em bloco</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Manter alinhamento cabeça-pescoço-coluna durante todo o movimento</span>
@@ -276,7 +276,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Introdução da maca</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Posicionar a maca paralelamente à vítima</span>
@@ -295,7 +295,7 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 6 */}
-            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)",  borderLeft: "4px solid #f39c12" }}>
+            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
                 <div className="col-md-6 order-md-2 text-center">
                   <img
@@ -323,7 +323,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Abaixar em bloco</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Manter alinhamento durante toda a descida</span>
@@ -342,7 +342,7 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 7 */}
-            <div className="step-card mb-4 p-3 rounded" style={{  borderLeft: "4px solid #f39c12" }}>
+            <div className="step-card mb-4 p-3 rounded" style={{ borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
                 <div className="col-md-6 text-center">
                   <img
@@ -370,7 +370,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Colar cintas de segurança</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Verificar o correto posicionamento das cintas</span>
@@ -389,7 +389,7 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 8 */}
-            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)",  borderLeft: "4px solid #f39c12" }}>
+            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
                 <div className="col-md-6 order-md-2 text-center">
                   <img
@@ -417,7 +417,7 @@ export default function PageEx4() {
                     </div>
                     <h4 style={{ color: "#f39c12", margin: 0 }}>Emparelhar socorristas</h4>
                   </div>
-                  <ul className="step-list" style={{  color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
                       <span>Posicionar socorristas de altura similar</span>
@@ -436,54 +436,54 @@ export default function PageEx4() {
             </div>
 
             {/* Passo 9 */}
-            <div className="step-card mb-4 p-3 rounded" style={{  borderLeft: "4px solid #f39c12" }}>          
+            <div className="step-card mb-4 p-3 rounded" style={{ borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
-              <div className="col-md-6 text-center">
-                <img
-                  src="/assets/tm5.png"
-                  alt="Passo 9: Levantamento com flexão"
-                  className="img-fluid rounded shadow"
-                  style={{ maxHeight: "250px" }}
-                />
-              </div>
-              <div className="col-md-6">
-                <div className="step-header d-flex align-items-center mb-3">
-                  <div className="step-number me-3" style={{
-                    width: "40px",
-                    height: "40px",
-                    backgroundColor: "#f39c12",
-                    color: "white",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                    fontSize: "1.2rem"
-                  }}>
-                    9
-                  </div>
-                  <h4 style={{ color: "#f39c12", margin: 0 }}>Levantamento com flexão</h4>
+                <div className="col-md-6 text-center">
+                  <img
+                    src="/assets/tm5.png"
+                    alt="Passo 9: Levantamento com flexão"
+                    className="img-fluid rounded shadow"
+                    style={{ maxHeight: "250px" }}
+                  />
                 </div>
-                <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
-                  <li className="mb-2 d-flex">
-                    <span className="me-2">•</span>
-                    <span>Manter coluna vertebral alinhada</span>
-                  </li>
-                  <li className="mb-2 d-flex">
-                    <span className="me-2">•</span>
-                    <span>Utilizar força das pernas para levantar</span>
-                  </li>
-                  <li className="d-flex">
-                    <span className="me-2">•</span>
-                    <span>Evitar torções ou movimentos bruscos</span>
-                  </li>
-                </ul>
+                <div className="col-md-6">
+                  <div className="step-header d-flex align-items-center mb-3">
+                    <div className="step-number me-3" style={{
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "#f39c12",
+                      color: "white",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                      fontSize: "1.2rem"
+                    }}>
+                      9
+                    </div>
+                    <h4 style={{ color: "#f39c12", margin: 0 }}>Levantamento com flexão</h4>
+                  </div>
+                  <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
+                    <li className="mb-2 d-flex">
+                      <span className="me-2">•</span>
+                      <span>Manter coluna vertebral alinhada</span>
+                    </li>
+                    <li className="mb-2 d-flex">
+                      <span className="me-2">•</span>
+                      <span>Utilizar força das pernas para levantar</span>
+                    </li>
+                    <li className="d-flex">
+                      <span className="me-2">•</span>
+                      <span>Evitar torções ou movimentos bruscos</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
             </div>
 
             {/* Passo 10 */}
-            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)",  borderLeft: "4px solid #f39c12" }}>
+            <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(209, 144, 39, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
                 <div className="col-md-6 order-md-2 text-center">
                   <img
@@ -531,7 +531,7 @@ export default function PageEx4() {
       content: (
         <div className="row">
           <div className="col-md-12">
-            
+
             {/* Passo 1 */}
             <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(243, 156, 18, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
@@ -545,7 +545,7 @@ export default function PageEx4() {
                 </div>
                 <div className="col-md-6">
                   <div className="step-header d-flex align-items-center mb-3">
-                    <div className="step-number me-3" style={{ 
+                    <div className="step-number me-3" style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "#f39c12",
@@ -559,26 +559,26 @@ export default function PageEx4() {
                     }}>
                       1
                     </div>
-                    <h4 style={{ color: "#f39c12", margin: 0 }}>Preparação para subida</h4>
+                    <h4 style={{ color: "#f39c12", margin: 0 }}>-----</h4>
                   </div>
                   <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
-                      <span>Posicionar a maca paralelamente aos degraus</span>
+                      <span>------</span>
                     </li>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
-                      <span>Verificar estabilidade da estrutura</span>
+                      <span>----</span>
                     </li>
                     <li className="d-flex">
                       <span className="me-2">•</span>
-                      <span>Distribuir equipe anterior e posterior</span>
+                      <span>------</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-    
+
             {/* Passo 2 */}
             <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(243, 156, 18, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
@@ -592,7 +592,7 @@ export default function PageEx4() {
                 </div>
                 <div className="col-md-6 order-md-1">
                   <div className="step-header d-flex align-items-center mb-3">
-                    <div className="step-number me-3" style={{ 
+                    <div className="step-number me-3" style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "#f39c12",
@@ -606,26 +606,26 @@ export default function PageEx4() {
                     }}>
                       2
                     </div>
-                    <h4 style={{ color: "#f39c12", margin: 0 }}>Técnica de subida</h4>
+                    <h4 style={{ color: "#f39c12", margin: 0 }}>-----</h4>
                   </div>
                   <ul className="step-list" style={{ color: "#e9ecef", fontSize: "1.1rem", lineHeight: "1.7" }}>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
-                      <span>Manter a maca sempre nivelada</span>
+                      <span>-----</span>
                     </li>
                     <li className="mb-2 d-flex">
                       <span className="me-2">•</span>
-                      <span>Sincronizar movimentos com comandos verbais</span>
+                      <span>------</span>
                     </li>
                     <li className="d-flex">
                       <span className="me-2">•</span>
-                      <span>Utilizar força das pernas para impulso</span>
+                      <span>------</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-    
+
             {/* Passo 3 */}
             <div className="step-card mb-4 p-3 rounded" style={{ backgroundColor: "rgba(243, 156, 18, 0.1)", borderLeft: "4px solid #f39c12" }}>
               <div className="row align-items-center">
@@ -639,7 +639,7 @@ export default function PageEx4() {
                 </div>
                 <div className="col-md-6">
                   <div className="step-header d-flex align-items-center mb-3">
-                    <div className="step-number me-3" style={{ 
+                    <div className="step-number me-3" style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "#f39c12",
@@ -666,13 +666,13 @@ export default function PageEx4() {
                     </li>
                     <li className="d-flex">
                       <span className="me-2">•</span>
-                      <span>Aterrissar suavemente em cada passo</span>
+                      <span>-----</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-    
+
             <div className="alert alert-warning mt-4">
               <strong>Nota:</strong> Priorizar sempre a segurança da equipe e da vítima, utilizando equipamentos de proteção individual quando necessário.
             </div>
@@ -772,7 +772,7 @@ export default function PageEx4() {
                   color: "#ecf0f1",
                 }}
               >
-                Resumo do Exercício
+                Resumo do Procedimento
               </h4>
               <div className="row">
                 <div className="col-md-6">
@@ -817,7 +817,29 @@ export default function PageEx4() {
                       2
                     </div>
                     <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
-                      Posicionar-se corretamente
+                      Preparar a vítima e o ambiente
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      3
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Posicionar os socorristas corretamente
                     </p>
                   </div>
                 </div>
@@ -838,10 +860,10 @@ export default function PageEx4() {
                         fontWeight: "bold",
                       }}
                     >
-                      3
+                      4
                     </div>
                     <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
-                      Realizar o agachamento
+                      Realizar o levantamento em bloco
                     </p>
                   </div>
                   <div className="d-flex align-items-center mb-3">
@@ -860,10 +882,32 @@ export default function PageEx4() {
                         fontWeight: "bold",
                       }}
                     >
-                      4
+                      5
                     </div>
                     <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
-                      Executar o salto explosivo
+                      Posicionar a vítima na maca com segurança
+                    </p>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div
+                      style={{
+                        minWidth: "30px",
+                        height: "30px",
+                        borderRadius: "50%",
+                        backgroundColor: "#f39c12",
+                        color: "#2c3e50",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginRight: "10px",
+                        fontSize: "0.9rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      6
+                    </div>
+                    <p className="m-0" style={{ fontSize: "0.9rem", fontWeight: "400", color: "#ecf0f1" }}>
+                      Transportar mantendo alinhamento corporal
                     </p>
                   </div>
                 </div>
@@ -877,7 +921,7 @@ export default function PageEx4() {
                   textAlign: "center",
                 }}
               >
-                <strong>Conclusão do Exercício</strong>
+                <strong>Lembrete:</strong> Todos os movimentos devem ser coordenados pelo socorrista responsável pela cabeça.
               </p>
               <div className="text-center">
                 <Button
