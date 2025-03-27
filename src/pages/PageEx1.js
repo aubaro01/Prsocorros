@@ -36,10 +36,11 @@ export default function CombinedPage() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <iframe
-              src="--"
+          <iframe
+              src="https://drive.google.com/file/d/13qk7SmcpZ7w8CcaaSQ-RUHl3y2P86i7L/preview"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
+              allow="autoplay"
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
@@ -343,10 +344,11 @@ export default function CombinedPage() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <iframe
-              src="--"
+          <iframe
+              src="https://drive.google.com/file/d/1nVGa1CQbQj3lnEj7ry9G8F4WQpQucHVd/preview"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
+              allow="autoplay"
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>

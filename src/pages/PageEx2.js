@@ -39,10 +39,12 @@ export default function PageEx4() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <iframe
-              src="--"
+          <iframe
+              src="https://drive.google.com/file/d/1Xu8e10-q4nnZmxmdtWw5-jkiJvk-1V0C/preview"
               title="Vídeo demonstrativo do exercício"
               allowFullScreen
+              allow="autoplay"
+             
             ></iframe>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
