@@ -39,7 +39,14 @@ export default function PageSBV() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <iframe src="--" title="Vídeo demonstrativo do exercício" allowFullScreen></iframe>
+            <video
+              controls
+              controlsList="nodownload" // Oculta o botão de download
+              onContextMenu={(e) => e.preventDefault()} // Bloqueia clique direito
+            >
+              <source src="/assets/mp4/sbv.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos HTML5.
+            </video>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Assista ao vídeo para conhecer a técnica correta.
@@ -172,28 +179,7 @@ export default function PageSBV() {
         </>
       ),
     },
-    {
-      id: 4,
-      title: "Vídeos Adicionais de Treinamento",
-      content: (
-        <div className="row">
-          <div className="col-md-12">
-            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef", marginBottom: "2rem" }}>
-              Assista aos vídeos adicionais para complementar seu treinamento.
-            </p>
-            <div className="mb-5">
-              <h4 style={{ color: "#f39c12", marginBottom: "1rem" }}>Técnicas Avançadas de Transporte</h4>
-              <div className="ratio ratio-16x9 mb-3">
-                <iframe src="--" title="Técnicas avançadas de transporte" allowFullScreen></iframe>
-              </div>
-              <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#e9ecef" }}>
-                Este vídeo apresenta técnicas avançadas para o transporte de vítimas em diversas situações.
-              </p>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+  
   ];
 
   return (

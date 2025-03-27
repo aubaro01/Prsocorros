@@ -39,11 +39,14 @@ export default function PageEx4() {
       content: (
         <>
           <div className="ratio ratio-16x9 mb-4">
-            <iframe
-              src="--"
-              title="Vídeo demonstrativo do exercício"
-              allowFullScreen
-            ></iframe>
+          <video
+              controls
+              controlsList="nodownload" // Oculta o botão de download
+              onContextMenu={(e) => e.preventDefault()} // Bloqueia clique direito
+            >
+              <source src="/assets/mp4/Rva.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos HTML5.
+            </video>
           </div>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "#e9ecef" }}>
             Assista ao vídeo abaixo para entender a técnica correta de execução do exercício. Preste atenção aos detalhes dos movimentos antes de começar a prática.
