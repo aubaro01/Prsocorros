@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createUserExerc, getAllUserExercs } = require('../controllers/UserExercController');
+const { createUserExerc, getAllUserExercs } = require('../controllers/UserExerController');
 
 router.post('/UserExerc', createUserExerc);
 
