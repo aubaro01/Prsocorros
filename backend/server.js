@@ -1,3 +1,3 @@
-const app = require('./app'); // Importando corretamente o app.js
+const app = require('./app'); 
 
 module.exports = app;
