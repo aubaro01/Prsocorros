@@ -15,6 +15,7 @@ app.use('/api/user-exercises', userExercRoutes);
 
 
 app.get('/', (req, res) => {
+  res.send('Olá, Vercel!');
   res.json({
       message: 'Hello from the backend!',
       status: 'success',
