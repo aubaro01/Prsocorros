@@ -1,4 +1,4 @@
-const Exercicio = require('../models/exerc'); // Importar o model Exercicio
+const Exercicio = require('../models/exerc'); 
 
 const createExercicio = async (req, res) => {
   try {

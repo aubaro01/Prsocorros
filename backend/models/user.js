@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-// Definição do esquema de usuário
+
 const userSchema = new mongoose.Schema({
   nome: {
     type: String,
-    required: true, // Garante que o campo 'home' seja obrigatório
+    required: true, 
   },
   circuito: {
     type: String,
-    required: true, // Garante que o campo 'circuito' seja obrigatório
+    required: true, 
   },
   Pass: {
     type: String,
