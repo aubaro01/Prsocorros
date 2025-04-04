@@ -9,7 +9,7 @@ require('./Config/db');
 app.use(express.json());
 
 
-app.use('/user', userRoutes);
+app.use('/api/user', userRoutes);
 app.use('/api/exercises', exerRoutes);
 app.use('/api/user-exercises', userExercRoutes);
 
