@@ -8,9 +8,6 @@ require('./Config/db');
 
 app.use(express.json());
 
-app.use('/api/user', userRoutes);
-app.use('/api/exercises', exerRoutes);
-app.use('/api/user-exercises', userExercRoutes);
 
 app.get('/', (req, res) => {
   res.json({
