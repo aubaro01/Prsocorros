@@ -1,19 +1,20 @@
-
 const express = require('express');
 const userRoutes = require('./routes/UserRote');
 const exerRoutes = require('./routes/ExerRote');
 const userExercRoutes = require('./routes/UserExerRote');
 
 const app = express();
+require('./Config/db');
 
 app.use(express.json());
 
-app.use('/api', userRoutes);
-app.use('/api', exerRoutes);
-app.use('/api', userExercRoutes);
 
-// Rota simples de teste
-app.get('/api/hello', (req, res) => {
+app.use('/user', userRoutes);
+app.use('/api/exercises', exerRoutes);
+app.use('/api/user-exercises', userExercRoutes);
+
+
+app.get('/', (req, res) => {
   res.json({
       message: 'Hello from the backend!',
       status: 'success',
@@ -21,8 +22,4 @@ app.get('/api/hello', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
-
+module.exports = app;
