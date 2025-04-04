@@ -8,18 +8,15 @@ require('./Config/db');
 
 app.use(express.json());
 
-
 app.use('/user', userRoutes);
 app.use('/api/exercises', exerRoutes);
 app.use('/api/user-exercises', userExercRoutes);
 
-
 app.get('/', (req, res) => {
-  res.send('Olá, Vercel!');
   res.json({
-      message: 'Hello from the backend!',
-      status: 'success',
-      timestamp: new Date().toISOString()
+    message: 'Hello from the backend!',
+    status: 'success',
+    timestamp: new Date().toISOString()
   });
 });
 
