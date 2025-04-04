@@ -1,15 +1,21 @@
+require('dotenv').config();  
 const mongoose = require('mongoose');
-require('dotenv').config();
 
-mongoose.connect(`${process.env.DB_HOST}/${process.env.DB_NAME}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const dbUri = process.env.db_url;
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'Erro ao conectar ao MongoDB:'));
-db.once('open', () => {
+if (!dbUri) {
+  console.error('Erro: DB_HOST não encontrado no arquivo .env');
+  process.exit(1);  
+}
+mongoose.connect(dbUri, {
+  connectTimeoutMS: 15000,  
+  socketTimeoutMS: 15000,   
+  useNewUrlParser: true,    
+  useUnifiedTopology: true 
+})
+.then(() => {
   console.log('Conectado ao MongoDB com sucesso!');
+})
+.catch((err) => {
+  console.error('Erro ao conectar ao MongoDB:', err);  
 });
-
-module.exports = mongoose;
