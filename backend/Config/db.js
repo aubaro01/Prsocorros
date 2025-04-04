@@ -10,8 +10,6 @@ if (!dbUri) {
 mongoose.connect(dbUri, {
   connectTimeoutMS: 15000,  
   socketTimeoutMS: 15000,   
-  useNewUrlParser: true,    
-  useUnifiedTopology: true 
 })
 .then(() => {
   console.log('Conectado ao MongoDB com sucesso!');
