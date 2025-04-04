@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api', userRoutes);
+app.use('/api/', userRoutes);
 app.use('/api', exerRoutes);
 app.use('/api', userExercRoutes);
 
